@@ -3,7 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     align-items: center;
-    text-align: center;
+    text-align: center;  
     transition: background-color 2s ease-out 100ms;
-}
 
+}
