@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     text-align: center;
+    align-items: center;
 }
 
 body{
@@ -146,7 +147,7 @@ textarea:focus{
         border-radius: 30px;
     }
     .child:last-child{
-        margin: 0px;
+        margin-top: 25px;
         padding: 45px;
         height: 250;
         width: 460px;

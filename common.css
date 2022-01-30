@@ -110,3 +110,24 @@
 {
     padding-left: 25px;
 }
+
+@media screen and (max-width: 480px){
+    .navbar
+    {
+        flex-direction: column;
+        display: none;
+    }
+    #toggle:checked + .navbar
+    {
+        display: flex;
+    }
+    .togglearea{
+        display: flex;
+    }
+    .navbar a:hover
+    {
+    background-color: white;
+    color: black;
+    }
+
+}
