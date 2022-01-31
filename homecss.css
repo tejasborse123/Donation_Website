@@ -4,8 +4,7 @@
     box-sizing: border-box;
     align-items: center;
     text-align: center;  
-    transition: background-color 2s ease-out 100ms
-
+    transition: background-color 2s ease-out 100ms;
 }
 
 /* Search Bar*/
@@ -72,16 +71,14 @@
   .child{
       width: 370px;
       height: 400px;
-      background-color: dodgerblue;
-      border-radius: 15px;
+      background: linear-gradient(to right, #0000ff,#a445b2);
+      border-radius: 30px;
   }
   .child:first-child{
-      border-radius: 15px;
-      background-color: dodgerblue;
+      border-radius: 30px;
   }
   .child:last-child{
-      border-radius: 15px;
-      background-color: dodgerblue;
+      border-radius: 30px;
   }
 
   .child:hover{
