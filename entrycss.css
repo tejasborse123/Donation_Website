@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+    transition: background-color 2s ease-out 100ms;
+}
+
+body{
+	background-color: #DC143C;
+}
+
+#container{
+	background-color: #fff;
+	height: auto;
+	width: auto;
+	position: absolute;
+	text-align: center;
+	left: 20%;
+	top: 20%;
+	right: 20%;
+	bottom: 20%;
+	padding: 0px;
+}
+
+#inner{
+	height: auto;
+	width: auto;
+	background-color: green;
+	display: block;
+	margin: 50px;
+}
+
+.entryBtns{
+	display: flex;
+	justify-content: space-around;
+}
+
+#LOGIN{
+	
+}
+
+#sign-in{
+	
+}
+
+.entryArea{
+
+}
