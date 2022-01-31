@@ -32,7 +32,7 @@ body{
   }
 
 .child:first-child{
-    color: #E30B5D;;
+    color: #E30B5D;
     padding-left: 10px;
     padding-right: 10px;
     justify-content: center;

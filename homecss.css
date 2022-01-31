@@ -71,7 +71,8 @@
   .child{
       width: 370px;
       height: 400px;
-      background: linear-gradient(to right, #0000ff,#a445b2);
+      color: black;
+      background: linear-gradient(to right, #273be2, #1f75fe);
       border-radius: 30px;
   }
   .child:first-child{
@@ -131,6 +132,7 @@
   }
 
   .donatelb1{
+       padding-top: 30px;
       font-size: 20px;
       color: white;
   }
