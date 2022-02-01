@@ -114,6 +114,16 @@ textarea:focus{
     box-shadow: 0 0 6px 0 dodgerblue;
 }
 
+#Email{
+    color: #E30B5D;
+    text-decoration: none;
+}
+
+#Email:hover {
+    color: #E30B5D;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 480px){
     .navbar
     {
@@ -194,7 +204,7 @@ textarea:focus{
             }
 
             .child:first-child{
-                color: #E30B5D;;
+                color: #E30B5D;
                 padding-left: 10px;
                 padding-right: 10px;
                 justify-content: center;
