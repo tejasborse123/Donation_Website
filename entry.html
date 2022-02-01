@@ -27,42 +27,53 @@
                <div class="slider-tab"></div>
             </div>
             <div class="form-inner">
-               <form action="entry.html" class="login" method="POST">
-                  <div class="field">
-                     <input type="text" placeholder="Email Address" required id="usernames">
-                  </div>
-                  <div class="field">
-                     <input type="password" placeholder="Password" required id="passwords">
-                  </div><br>
-                  <div class="pass-link">
-                     <a href="#">Forgot password?</a>
-                  </div>
-                  <div class="field btn">
-                     <div class="btn-layer"></div>
-                     <input type="submit" value="Login" onclick="Validate()">
-                  </div>
-                  <div class="signup-link">
-                     Not a member? <a href="">Signup now</a>
-                  </div>
+
+               <form action="entry.php" class="login" method="POST">
+			                  <div class="field">
+			                     <input type="text" placeholder="Email Address" required id="username" name="username">
+			                  </div>
+
+			                  <div class="field">
+			                     <input type="password" placeholder="Password" required id="password" name="password">
+			                  </div><br>
+
+			                  <div class="pass-link">
+			                     <a href="#">Forgot password?</a>
+			                  </div>
+
+			                  <div class="field btn">
+			                     <div class="btn-layer"></div>
+			                     <input type="submit" value="Login" onclick="Validate()">
+			                  </div>
+
+			                  <div class="signup-link">
+			                     Not a member? <a href="">Signup now</a>
+			                  </div>
                </form>
+
                <form action="#" class="signup">
-                  <div class="field">
-                     <input type="text" placeholder="Enter your Name" required>
-                  </div>
-                  <div class="field">
-                     <input type="text" placeholder="Email Address" required>
-                  </div>
-                  <div class="field">
-                     <input type="password" placeholder="Enter OTP" required>
-                  </div>
-                  <div class="field">
-                     <input type="password" placeholder="Create Password" required>
-                  </div>
-                  <div class="field btn">
-                     <div class="btn-layer"></div>
-                     <input type="submit" value="Signup">
-                  </div>
+                			  <div class="field">
+			                     <input type="text" placeholder="Enter your Name" required>
+			                  </div>
+
+			                  <div class="field">
+			                     <input type="text" placeholder="Email Address" required>
+			                  </div>
+
+			                  <div class="field">
+			                     <input type="password" placeholder="Enter OTP" required>
+			                  </div>
+
+			                  <div class="field">
+			                     <input type="password" placeholder="Create Password" required>
+			                  </div>
+
+			                  <div class="field btn">
+			                     <div class="btn-layer"></div>
+			                     <input type="submit" value="Signup">
+			                  </div>
                </form>
+
             </div>
          </div>
       </div>
