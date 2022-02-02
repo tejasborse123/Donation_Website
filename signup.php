@@ -1,6 +1,11 @@
 <?php
-	$username = $_POST['username'];
+	$name = $_POST['name'];
+    $email = $_POST['email'];
+    $otp = $_POST['otp'];
 	$password = $_POST['password'];
-	echo $username ,"<br>";
-	echo $password ,"<br>";	
+
+	echo "Name : " , $name ,"<br>";
+	echo "Email : " ,$email ,"<br>";
+	echo "OTP : " ,$otp ,"<br>";
+	echo "Password : " ,$password ,"<br>";	
 ?>
