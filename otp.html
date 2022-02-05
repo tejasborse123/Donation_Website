@@ -11,8 +11,8 @@
 				Just one more step
 			</div>
 			<div id="sendOtp">
-				Enter the 6 digit code we sent to : xxxxxxxxxxx
-			</div>
+				Enter the 6 digit code we sent to : <?php $mail = $_SESSION['email']; echo $mail; ?> 
+			</div> <br>
 			<div>
 				<input type="text" name="otp" placeholder="######" id="enterOTP">
 			</div>

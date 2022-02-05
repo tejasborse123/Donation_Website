@@ -1,6 +1,5 @@
 <?php
 
-   include 'otp.html';
 
    $email = $_POST['email'];
    $fullname = $_POST['fullname'];
@@ -11,13 +10,14 @@
    
    session_start();
    $_SESSION['code'] = $code;
-	
+   $_SESSION['email']= $email;
+
 	$headers = "From: savelifes07@gmail.com";
 	$subject = "verify otp";
 	$message = " Hey $fullname here is your OTP for save life foundation, $code ";
 	if(mail($email, $subject, $message, $headers))
 	{
-		echo "Emai succesfully send to $email ";
+		include 'otp.html';
 	}
 	else
 	{
