@@ -4,6 +4,7 @@ session_start();
 
 $chktemp = $_SESSION['code'];
 $otp = $_POST['otp'];
+$birthday = $_SESSION['birthday'];
 
 if ($chktemp == $otp) 
 {
@@ -28,7 +29,8 @@ $conn = mysqli_connect("localhost", "root", "","savelife");
 			echo "connection successfull";
 			}
 			 
-		$sql = "INSERT INTO `users` (`email`, `fullname`, `username`, `password`) VALUES ('$email' , '$fullname' , '$username' , '$password')";
+		$sql = "INSERT INTO `usersinfo` (`Sr.no`, `Full Name`, `Email`, `Phone Number`, `Username`, `Password`, `Birthday`) VALUES ('', '$fullname' , '$email' , '', '$username', '$password', '$birthday')";
+
 		$result = mysqli_query($conn,$sql) or die(mysqli_error());
 			
 		if($result) {

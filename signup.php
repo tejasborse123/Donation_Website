@@ -1,6 +1,8 @@
 <?php
 
   $code = rand(100000,999999);
+  $birthday = $_POST['birthday'];
+  
   session_start();
   
   $_SESSION['code'] = $code;
@@ -8,6 +10,8 @@
   $fullname = $_SESSION['fullname'];
   $username = $_SESSION['username'];
   $password = $_SESSION['password'];
+
+  $_SESSION['birthday']= $birthday;
 
 
 	$headers = "From: savelifes07@gmail.com";
