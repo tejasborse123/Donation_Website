@@ -1,16 +1,14 @@
 <?php
 
+  $code = rand(100000,999999);
+  session_start();
+  
+  $_SESSION['code'] = $code;
+  $email = $_SESSION['email'];
+  $fullname = $_SESSION['fullname'];
+  $username = $_SESSION['username'];
+  $password = $_SESSION['password'];
 
-   $email = $_POST['email'];
-   $fullname = $_POST['fullname'];
-   $username = $_POST['username'];
-	$password = $_POST['password'];
-
-   $code = rand(100000,999999);
-   
-   session_start();
-   $_SESSION['code'] = $code;
-   $_SESSION['email']= $email;
 
 	$headers = "From: savelifes07@gmail.com";
 	$subject = "verify otp";
