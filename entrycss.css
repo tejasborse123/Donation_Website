@@ -140,7 +140,7 @@ form .field input:focus::placeholder{
 }
 .form-inner form .pass-link a,
 .form-inner form .signup-link a{
-  color: #fa4299;
+  color: red;
   text-decoration: none;
 }
 .form-inner form .pass-link a:hover,

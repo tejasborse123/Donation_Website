@@ -32,30 +32,30 @@
         <div class="parents">
               <div class="child">
                     <br><h1 id="convo">Let's start Conversation</h1><br>
-                    <form>
+                    <form action="contact.php" method="POST">
                       <div class="input-row">
                           <div class="input-group">
                                   <label><h3>Name:</h3></label>
-                                  <input type="text" placeholder="Enter your Name here.." class="inputs" id="Name">
+                                  <input type="text" placeholder="Enter your Name here.." class="inputs" id="Name" name="name">
                           </div>
                           <div class="input-group">
                                   <label><h3>Phone no:</h3></label>
-                                  <input type="text" placeholder="Enter your Phone no..." class="inputs">
+                                  <input type="text" placeholder="Enter your Phone no..." class="inputs" name="phone">
                           </div>
                       </div>
                       <div class="input-row">
                           <div class="input-group">
                                   <label><h3>Email:</h3></label>
-                                  <input type="Email" placeholder="Enter your Email here.." class="inputs" id="Name">
+                                  <input type="Email" placeholder="Enter your Email here.." class="inputs" id="Name" name="email">
                           </div>
                           <div class="input-group">
                                   <label><h3>Password:</h3></label>
-                                  <input type="text" placeholder="Enter your Password..." class="inputs">
+                                  <input type="text" placeholder="Enter your Password..." class="inputs" name="password">
                           </div>
                       </div>
 
                       <label><h3>Message:</h3></label>
-                      <textarea rows="5" cols="35" placeholder="Your Message here"></textarea><br>
+                      <textarea rows="5" cols="35" placeholder="Your Message here" name="message"></textarea><br>
 
                       <button type="submit" id="submit">Submit</button><br><br>
                     </form><br><br><br><br>

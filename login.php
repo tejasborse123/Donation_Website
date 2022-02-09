@@ -23,7 +23,7 @@
 		}
 
 		else{
-			$label = "Login Failed";
+			$label = " X---Login Failed---X";
 			session_start();
 			$_SESSION['label']=$label;
 			include 'entry.html';
