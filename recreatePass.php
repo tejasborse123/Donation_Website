@@ -15,26 +15,19 @@ $conn = mysqli_connect("localhost", "root", "","savelife") or die("Connection Fa
       	session_start();
         $email = $_SESSION['email'];
 
-      	if ($password != $cpassword) {
-      		include 'recreatePass.html';
-      	}
+      	if ($password == $cpassword) {
 
-	$query = "UPDATE `usersinfo` SET `Password`='$password' WHERE 'email'='$email'";
+      		$query = "UPDATE `usersinfo` SET `Password`='$password' WHERE 'email'='$email'";
+      	
+			$result = mysqli_query($conn,$query) or die(mysqli_error());
 
-	$result = mysqli_query($conn,$query) or die(mysqli_error());
-
-	if($result){
-					$label = "Password Changed successfully.. Go Back to LOGIN page";
-					$_SESSION['labels']=$labels;
-					header("Location: test.html");
-			}
-	else{
-					$labels =  "Please make sure that both passwords match";
-					$_SESSION['label']=$labels;
-					header("Location: test.html");
-			}
-		
-
-
-
+			$labels =  "Password Changed successfully.. <br>Go Back to LOGIN page";;
+			$_SESSION['labels']=$labels;
+			include 'recreatePass.html';
+		}
+		else{
+			$labels =   "Password Not Changed.. <br>Please make sure that both passwords match";
+			$_SESSION['labels']=$labels;
+			include 'recreatePass.html';
+		}
 ?>
