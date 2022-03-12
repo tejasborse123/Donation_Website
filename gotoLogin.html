@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SAVE LIFE</title>
+	<link rel="stylesheet" type="text/css" href="gotoLogin.css">
+</head>
+<body>
+	<div id="block">
+		<div id="division">
+					<?php 
+				    $email = $_SESSION['email'];
+				    echo "Hey " . $email; 
+				    $loginmsg = "";
+					?> 
+		</div><br>
+		<div id="division">
+			<label>
+					<?php 
+					    $loginmsg = $_SESSION['loginmsg'];
+					    echo $loginmsg; 
+					    $loginmsg = "";
+					?> 
+            </label>
+		</div>
+		<div id="division">
+				<a href="entry.html"><button id="button"><h3>Back To LOGIN</h3></button></a>
+		</div>
+	</div>
+</body>
+</html>

@@ -17,15 +17,23 @@
 				<input type="text" name="cpassword" id="password" placeholder="Confirm Password">
 			</div>
 			<div id="division">
-				<a href="gotoLogin.html"><input type="submit" name="" id="btn"></a>
+				<input type="submit" name="" id="btn">
 			</div>
 			<div id="division">
 						------------------ OR ------------------ 
 			</div>
-		</form>
 			<div id="division">
 				<a href="entry.html"><button id="button">Back To LOGIN</button></a>
 			</div>
+			<div id="division">
+                <label>
+                  <?php 
+                        $labels = $_SESSION['labels'];
+                        echo $labels; 
+                  ?> 
+                </label>
+            </div>
+         </form>
 	</div>
 </body>
 </html>

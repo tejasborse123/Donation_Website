@@ -74,6 +74,9 @@ html,body{
 input[type="radio"]{
   display: none;
 }
+.signup-link label{
+  color: red;
+}
 #signup:checked ~ .slider-tab{
   left: 50%;
 }
