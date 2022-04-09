@@ -176,6 +176,56 @@ textarea:focus{
     }
 }
 
+.icons-wrapper{
+    position: relative;
+}
+
+.icons-wrapper::after{
+    content: '';
+    display: space-between;.
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.icon{
+    display: inline-block;
+    font-size: 44px;
+    animation: float 5s ease-in-out infinite;
+}
+
+.ri-instagram-line{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ri-facebook-circle-line{
+    color: #1877f2;
+    animation-delay: 1s; 
+}
+
+.ri-whatsapp-line{
+    color: #25d366;
+    animation-delay: 2s; 
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
 @media screen and (min-width: 1300px) and (min-height: 720px){
             .parents{
                 width: auto;
