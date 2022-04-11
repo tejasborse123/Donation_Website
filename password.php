@@ -1,5 +1,5 @@
 <?php
-	include 'birthday.html';
+	include 'password.html';
 	$email = $_POST['email'];
 	$fullname = $_POST['fullname'];
 	$username = $_POST['username'];
@@ -9,5 +9,5 @@
 	$_SESSION['email']=$email;
 	$_SESSION['fullname']=$fullname;
 	$_SESSION['username']=$username;
-	$_SESSION['birthday']=$birthday;
+	$_SESSION['birthday']=$birthday; 
 ?>

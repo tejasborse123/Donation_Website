@@ -4,90 +4,70 @@
   <link rel="stylesheet" type="text/css" href="homecss.css">
   <link rel="stylesheet" type="text/css" href="common.css"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <body>
-    <div class="mcontainer">
-    <!---Navigation Bar -->
 
-    <div class="togglearea">
-      <label for="toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
-    <input type="checkbox" id="toggle" title="toggle">
-      <div class="navbar">
-      	
-       <div class="logo"><label id="lg">Save Life</label></div>
-        <ul>
-           <li><a class="active" href="#"> Home</a></li>
-           <li><a href="contact.html"> Contact</a></li>
-           <li><a href="about.html"> About</a></li> 
-           <li><a class="img1" href="profile.html"><img src="images/usracc.png" alt="account" width="25" height="23" ></a></li>
-        </ul>
-      </div>
+  <body onload="myFunction()">
 
-
-
-    <!-- Search Bar -->
-
-      <div class="wrapper">
-        <div class="search-input">
-          <input type="search" placeholder="Search here..">
-          <div class="icon"> <img src="images/searchicon.png" alt="search" height="20px" width="20px"> </div> 
+    <div id="loading">
+       <div class="loader">
+                <div class="loader loader-inner">   
+                </div>
         </div>
-      </div>
+    </div>
+
+<div class="Page">
+<!--- //////////////////////////////////////////////////////////////////////// NavBar ////////////////////////////////////////////////////////////////////////////*/ -->
   
+    <div class="navbar">
 
-    <!--- Food request -->
+                  <div class="togglearea">
+                        <label for="toggle">
+                          <span></span>
+                          <span></span>
+                           <span></span>
+                        </label>
+                  </div>
 
-      <div class="parents">
-      
-        <div class="child">
-            <br><br><br>
-            <label class="reqfood"> Need food? </label><br><br><br><br>
-            <label class="reqfood1"> Then just click on button below. We are always here to help you. </label>
-          <div class="rqbtn">
-            <a href="entry.html">
-            <input type="button" id="frqbtn" value="Request food">
-            </a>
-          </div>
-        </div>
+                  <input type="checkbox" id="toggle" title="toggle">
+                  
+                  <div class="navbar">
+                      
+                              <div class="logo"><label id="lg">Save Life</label>
+                              </div>
 
-        <div class="child">
-          <br><br><br>
-            <label class="donatelb"> Donate & help them. </label><br><br><br><br>
-            <label class="donatelb1"> Donate some money to needy & poor. Do something good by helping them.</label>
-          <div class="payment">
-            <a href="entry.html">
-            <input type="button" value="Donate" id="donatebtn"> 
-            </a>
-          </div> 
-        </div>
-
-        <div class="child">
-           <br><br><br>
-             <label class="givefood"> Give food. </label><br><br><br><br>
-             <label class="givefood1"> Let's come and Donate food to the poor & hungry, make them satisfied.</label>
-            <div class="givebtn">
-              <a href="entry.html">
-              <input type="button" value="Give food" id="givefdbtn">
-              </a>
-            </div>   
-
-        </div>
-
-       </div>
+                              <ul>
+                                   <li><a class="active" href="#"> Home</a></li>
+                                   <li><a href="contact.html"> Contact</a></li>
+                                   <li><a href="about.html"> About</a></li> 
+                                   <li><a class="img1" href="profile.html"><img src="images/profile-line.png" alt="account" width="25" height="23" ></a></li>
+                              </ul>
+                  </div>
     </div>
+  
+<!--- //////////////////////////////////////////////////////////////////////// Actual Content //////////////////////////////////////////////////////////////////////////// -->
+      <div class="content1">Slides and images</div>
+      <div class="content2">Top Donater Info</div>
+      <div class="content3">Donate Button</div>
+      <div class="content4">Crypto Option</div>
+      <div class="content5">Receive Button</div>
+      <div class="content6">Yet to decide</div>
+<!--- //////////////////////////////////////////////////////////////////////// Footer //////////////////////////////////////////////////////////////////////////// -->
+
+    <footer class="Footer">
+        <div class="copyright">
+          <h3> All rights reserved. © Niket Sonawane © Tejas Borse </h3>
+        </div>
+    </footer>
+  <!--- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+</div>  
+
+    <script>
+      var preloader = document.getElementById('loading');
+
+      function myFunction() {
+        preloader.style.display = 'none';
+      }
+
+    </script>
   </body>
 
-
-  
-  <!-- Footer -->
-  <footer class="Footer">
-  	<div class="copyright">
-      <h3> All rights reserved. © Niket Sonawane © Tejas Borse </h3>
-    </div>
-  </footer>
- </head>
-</html>
+ 
