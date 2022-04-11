@@ -111,6 +111,19 @@
 }
 
 
+#donatebtn{
+    border-radius: 10px;
+    border: none;
+    margin-top: 50px;
+    font-size: 20;
+    font-family: serif;
+    height: 40;
+    width: 120;
+    color: white;
+    background: -webkit-linear-gradient(right, #a445b2, dodgerblue);
+
+   }
+
 .Footer"{
   grid-area: Footer;
 }
