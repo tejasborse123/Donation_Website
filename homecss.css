@@ -48,9 +48,9 @@
 
 .page{
   padding-left: 20px;
-  margin-top: 45px;
+  margin-top: 65px;
   display: grid;
-  height: 93vh;
+  height: 89vh;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 0fr;
   grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
 
@@ -127,8 +127,23 @@
 
    }
 
-.Footer"{
-  grid-area: Footer;
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to right, dodgerblue, #1E2F97);
+    color: #fff;
+    padding: 18px 0 30px;
+    font-size: 13px;
+    line-height: 14px;
+    transition: background-color 2s ease-out 100ms;
+    grid-area: Footer;
+    } 
+
+.Footer .copyright
+{
+    padding-left: 25px;
 }
 
 
