@@ -129,6 +129,19 @@
     background: springgreen;
    }
 
+   #donatebtn1{
+    border-radius: 10px;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 20;
+    font-family: serif;
+    height: 40;
+    width: 120;
+    color: white;
+    background: springgreen;
+   }
+
   #receivebtn{
     border-radius: 10px;
     border: none;
@@ -258,9 +271,9 @@
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 480px){
 
-    .navbar
+     .navbar
     {
         flex-direction: column;
         display: none;
@@ -278,46 +291,4 @@
     color: black;
     }
 
-    .page{
-      grid-template-columns: 1fr;
-      grid-template-rows:  0.4fr 2.2fr 1.2fr 1.2fr 1.2fr ;
-      grid-template-areas: "content1" "content2" "content3" "content4" "content5" "content6";
-     }
-
-    .content1{
-      height: 100%;
-      width: 100%;
-      margin: 10px;
-    }
-
-    .content2{
-      height: 100%;
-      width: 100%;
-      margin: 10px;
-    }
-
-    .content3{
-      height: 100%;
-      width: 100%;
-      margin: 10px;
-    }
-
-    .content4{
-      height: 100%;
-      width: 100%;
-      margin: 10px;
-    }
-
-    .content5{
-      height: 100%;
-      width: 100%;
-      margin: 10px;
-    }
-
-    .content6{
-      height: 100%;
-      width: 100%;
-      margin: 10px;
-    }
-   
 }
