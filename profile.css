@@ -7,91 +7,264 @@
     transition: background-color 2s ease-out 100ms;
 }
 
-.left-div{
-	margin-top: 90px;
-	margin-left: 50px;
-	margin-bottom: 50px;
-	margin-right: 25px;
-	border: 3px solid black;
-	width: 20%;
-	height: 420px;
-	float: left;
-	padding: 20px;
-	border-radius: 20px;
-	background: linear-gradient(to right, #1E2F97, dodgerblue);
+body{
+    background: linear-gradient( to right,#fcb045,#3ab45f,#6cc5eb); 
+    background-size: 400% 400%;
+    animation: animate-background 10s infinite ease-in-out;
 }
 
-.ch1{
-	border: 2px solid black;
-	width: 45%;
-	height: 90px;
-	float: left;
-	margin-right: 20px;
-	border-radius: 20px;
-	background-color: white;
+@keyframes animate-background{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
 
-.ch2{
-	border: 2px solid black;
-	width: 45%;
-	height: 90px;
-	float: left;
-	border-radius: 20px;
-	background-color: white;
+.parents{
+    width: auto;
+    height: auto;
+    margin: 85px; 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: all 0.2 linear;
 }
 
-.ch3{
-	margin-top: 15px;
-	margin-left: 10	px;
-	border: 2px solid black;
-	width: 100%;
-	height: 270px;
-	float: left;
-	border-radius: 20px;
-	background-color: white;
+.child{
+    height: 390;
+    width: 450;
+    margin: 20px; 
+    border-radius: 30px;
 }
 
-.right-div{
-	margin-top: 90px;
-	margin-right: 50px;
-	margin-bottom: 50px;
-	margin-left: 25px;
-	border: 3px solid black;
-	width: 68%;
-	height: 420px;
-	float: left;
-	padding: 20px;
-	border-radius: 20px;
-	background: linear-gradient(to left, #1E2F97, dodgerblue);
+.child:hover{
+    box-shadow: 0 0 12px black;
+  }
+
+.child:first-child{
+    color: #E30B5D;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+   background-color: white;
 }
 
-.child-1{
-	border: 2px solid black;
-	width: 100%;
-	height: 90px;
-	float: left;
-	border-radius: 20px;
-	background-color: white;
+.child:last-child{
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe400;
 }
 
-.child-2{
-	margin-top: 15px;
-	margin-right: 5px;
-	border: 2px solid black;
-	width: 40%;
-	height: 270px;
-	float: left;
-	border-radius: 20px;
-	background-color: white;
+.container{
+	margin: 0px 30%;
+	height: 250px;
 }
 
-.child-3{
-	margin-top: 15px;
-	margin-left: 10px;
-	border: 2px solid black;
-	width: 58%;
-	height: 270px;
-	float: left;
+.drop-down{
+	border: 3px solid #fcb045;
+	width: 200px;
+	border-radius: 10px;
+	display: none;
+	margin: 10px 0px;
+}
+
+.container button{
+	margin-top: 25px;
+	position: relative;
+	padding: 10px 30px;
+	width: 200px;
+	color: #fff;
+	cursor: pointer;
+	background: #fcb045;
 	border-radius: 20px;
-	background-color: white;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.container button::before{
+	content: "  ";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-left: 2px solid;
+	border-bottom: 2px solid;
+	transform: rotate(-45deg);
+	right: 50px;
+	top: 10px;
+	transition: 0.5s;
+}
+
+.container ul{
+	padding: 0;
+	margin: 0;
+	background: #fff;
+	border-radius: 5px; 
+	justify-content: center;
+	align-items: center;
+}
+
+.container .drop-down>ul li{
+	list-style: none;
+	padding: 10px 20px;
+	transition: 0.2s ease;
+	cursor: pointer;
+}
+
+.container .drop-down>ul li:hover{
+	opacity: 0.7;
+	border-bottom: 4px solid #EA378A;
+}
+
+.Ratings{
+	background: #ADD8E6;
+	color: black;
+	height: 120px;
+	margin: 0px 10px;
+	border-radius: 50px;
+}
+
+.Ratings .star-icon{
+	font-size: 30px;
+	text-align: center;
+	padding: 20px 0px;
+}
+
+.Ratings input{
+	display: none;
+}
+
+.Ratings input + label{
+	font-size: 30px;
+	text-shadow: 1px 1px 0 #ffe400;
+	cursor: pointer;
+}
+
+.Ratings input:checked ∼ .Ratings{
+	color: gold;
+
+}
+
+.Ratings label:active{
+	transform: scale(0.8);
+	transition: 0.3s ease; 
+}
+
+#submit:hover{
+    background:  linear-gradient(to right,#F4D03F,#00BFFF);
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.Ratings button{
+    background:  linear-gradient(to right,#00BFFF,#E30B5D);
+    width: 75px;
+    outline: none;
+    color: #fff;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+
+@media screen and (max-width: 480px){
+    .navbar
+    {
+        flex-direction: column;
+        display: none;
+    }
+    #toggle:checked + .navbar
+    {
+        display: flex;
+    }
+    .togglearea{
+        display: flex;
+    }
+    .navbar a:hover
+    {
+    background-color: white;
+    color: black;
+    }
+    .parent{
+        display: inline-block; 
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        background-color: red;
+    }
+    .child:first-child{
+        margin-top: 0px;
+        height: 570;
+        width: 460px;
+        border-radius: 30px;
+    }
+    .child:last-child{
+        margin-top: 25px;
+        padding: 45px;
+        height: 450;
+        width: 460px;
+        border-radius: 30px;
+    }
+}
+
+.child:hover{
+    box-shadow: 0 0 12px black;
+}
+
+#submit:hover{
+    background:  linear-gradient(to right,#F4D03F,#00BFFF);
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+@media screen and (min-width: 1300px) and (min-height: 720px){
+            .parents{
+                width: auto;
+                height: auto;
+                margin: 100px; 
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                transition: all 0.2 linear;
+            }
+
+            .child{
+                height: 500px; 
+                width: 600px;
+                margin: 20px; 
+                border-radius: 30px;
+                flex: 50;
+            }
+
+            .child:hover{
+                box-shadow: 0 0 12px black;
+            }
+
+            .child:first-child{
+                color: #E30B5D;
+                padding-left: 10px;
+                padding-right: 10px;
+                justify-content: center;
+               background-color: white;
+            }
+
+            .child:last-child{
+                justify-content: center;
+                background-color: white;
+            }
+
+            .child:hover{
+                 box-shadow: 0 0 12px black;
+            }
+
+            #submit:hover{
+			    background:  linear-gradient(to right,#F4D03F,#00BFFF);
+			    cursor: pointer;
+			    transition: all .5s ease-in-out;
+			}
 }

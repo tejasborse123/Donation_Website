@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
-  <body onload="myFunction()">
+  <body  onload="myFunction()">
 
     <div id="loading">
        <div class="loader">
@@ -14,41 +14,37 @@
                 </div>
         </div>
     </div>
+<!--- //////////////////////////////////////////////////////////////////////// Navbar///////////////////////////////////////////////////////////////////////// -->
+     <div class="mcontainer">
+                          <!---Navigation Bar -->
 
+                                <div class="togglearea">
+                                  <label for="toggle">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </label>
+                                </div>
+                          <input type="checkbox" id="toggle" title="toggle">
+                            <div class="navbar">
+                              
+                                     <div class="logo"><label id="lg">Save Life</label></div>
+                                      <ul>
+                                         <li><a class="active" href="index.html"> Home</a></li>
+                                         <li><a href="contact.html"> Contact</a></li>
+                                         <li><a href="about.html"> About</a></li> 
+                                         <li><a class="img1" href="profile.html"><img src="images/profile-line.png" alt="account" width="25" height="23" ></a></li>
+                                      </ul>
+                            </div>
+       </div>
+
+ <!--- //////////////////////////////////////////////////////////////////////// Actual Content///////////////////////////////////////////////////////////////////////// -->
 <div class="Page">
-<!--- //////////////////////////////////////////////////////////////////////// NavBar ////////////////////////////////////////////////////////////////////////////*/ -->
-  
-    <div class="navbar">
 
-                  <div class="togglearea">
-                        <label for="toggle">
-                          <span></span>
-                          <span></span>
-                           <span></span>
-                        </label>
-                  </div>
-
-                  <input type="checkbox" id="toggle" title="toggle">
-                  
-                  <div class="navbar">
-                      
-                              <div class="logo"><label id="lg">Save Life</label>
-                              </div>
-
-                              <ul>
-                                   <li><a class="active" href="#"> Home</a></li>
-                                   <li><a href="contact.html"> Contact</a></li>
-                                   <li><a href="about.html"> About</a></li> 
-                                   <li><a class="img1" href="profile.html"><img src="images/profile-line.png" alt="account" width="25" height="23" ></a></li>
-                              </ul>
-                  </div>
-    </div>
-  
-<!--- //////////////////////////////////////////////////////////////////////// Actual Content //////////////////////////////////////////////////////////////////////////// -->
       <div class="content1"><br><br><br>Slides and images</div>
       <div class="content2"><br><br><br>
             <div class="topdonaterhead" >
-                    <h3>!!..Top Donater..!!</h3>
+                    <h1>!!..Top Donater..!!</h1>
             </div>
             <div class="Top-1">
                 1st : Name & Amount <br> Profile Logo
@@ -75,17 +71,17 @@
          <button class="ReceiveBtn" id="receivebtn"> Receive </button>
 
       </div>
-      <div class="content6"><br><br><br>Yet to decide</div>
-<!--- //////////////////////////////////////////////////////////////////////// Footer //////////////////////////////////////////////////////////////////////////// -->
 
-    <footer class="Footer">
-        <div class="copyright">
-          <h3> All rights reserved. © Niket Sonawane © Tejas Borse </h3>
-        </div>
-    </footer>
-  <!--- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-</div>  
+</div>
 
+      <footer class="Footer">
+          <div class="copyright">
+            <h3> All rights reserved. © Niket Sonawane © Tejas Borse </h3>
+          </div>
+          
+      </footer>
+
+<!--- //////////////////////////////////////////////////////////////////////// JavaScript ///////////////////////////////////////////////////////////////////////// -->
     <script>
       var preloader = document.getElementById('loading');
 
@@ -94,6 +90,9 @@
       }
 
     </script>
-  </body>
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+</body>
+
+
 
  

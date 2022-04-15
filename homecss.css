@@ -7,6 +7,11 @@
     transition: background-color 2s ease-out 100ms;
 }
 
+html,body{
+  align-items: center;
+  justify-content: center;
+}
+
 #loading{
   margin-top: 15%;
   margin-left: 48%;
@@ -64,35 +69,34 @@ body{
     }
 }
 
-.page{
+.Page{
   padding-left: 20px;
   margin-right: 15px;
-  margin-top: 65px;
+  margin-bottom: 0px;
+  margin-top: 55px;
   display: grid;
-  height: 89vh;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 0fr;
-  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  height: 80%;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 
   grid-template-areas: 
-  "navbar navbar navbar navbar navbar"
-  "content1 content2 content2 content2 content6"
-  "content1 content3 content4 content5 content6"
-  "Footer Footer Footer Footer Footer";
-  grid-gap: 0.5rem;
+  "content1 content2 content2 content2"
+  "content1 content3 content4 content5";
+  grid-gap: 0.8rem;
 }
 
 .content1{
-  height: 100%;
+  height: 450px;
   width: 100%;
-  background: cyan;
+  background: #fff;
   grid-area: content1;
   border-radius: 15px;
+  min-width: 200px;
 }
 
 .content2{
-  height: 185px;
+  height: 200px;
   width: 100%;
-  background: springgreen;
   grid-area: content2;
   border-radius: 15px;
   display: grid;
@@ -101,77 +105,79 @@ body{
   grid-template-columns: 2fr 2fr 2fr ;
   grid-template-rows: 2fr 2fr ;
   grid-template-areas: "topdonaterhead topdonaterhead topdonaterhead"
-                       " Top-1 Top-2 Top-3"
+                       " Top-1 Top-2 Top-3";
+  min-width: 200px;
 }
 
 .topdonaterhead{
   height: 40px;
   width: 100%;
-  background: #6cc5eb;
+  color: #E30B5D;
+  background: #fff;
   grid-area: topdonaterhead;
   border-radius: 15px;
 }
 
 .Top-1{
-  height: 110px;
+  height: 170px;
   width: 100%;
-  background: #6cc5eb;
+  color: #E30B5D;
+  background: #fff;
   grid-area: Top-1;
   border-radius: 25px;
+  min-width: 160px;
 }
 
 .Top-2{
-  height: 110px;
+  height: 170px;
   width: 100%;
-  background: #6cc5eb;
+  color: #E30B5D;
+  background: #fff;
   grid-area: Top-2;
   border-radius: 25px;
+  min-width: 160px;
 }
 
 .Top-3{
-  height: 110px;
+  height: 170px;
   width: 100%;
-  background:#6cc5eb;
+  color: #E30B5D;
+  background: #fff;
   grid-area: Top-3;
   border-radius: 25px;
+  min-width: 160px;
 }
 
 .content3{
-  height: 100%;
+  height: 200px;
   width: 100%;
   background: dodgerblue;
   grid-area: content3;
   border-radius: 15px;
   font-size: 20px;
-  color: white;
+  color: #E30B5D;
+  min-width: 200px;
 }
 
 .content4{
-  height: 100%;
+  height: 200px;
   width: 100%;
-  background: cyan;
+  background: linear-gradient( to top,springgreen,yellow,springgreen);
   grid-area: content4;
   border-radius: 15px;
+  min-width: 200px;
 }
 
 .content5{
-  height: 100%;
+  height: 200px;
   width: 100%;
   background: dodgerblue;
   grid-area: content5;
   border-radius: 15px;
   font-size: 20px;
-  color: white;
+  color: #E30B5D;
+  min-width: 200px;
 }
-
-.content6{
-  height: 100%;
-  width: 100%;
-  background: cyan;
-  grid-area: content6;
-  border-radius: 15px;
-}
-
 
 #donatebtn{
     border-radius: 10px;
@@ -211,140 +217,38 @@ body{
     background: #6cc5eb;
    }
 
-.footer{
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(to right, dodgerblue, #1E2F97);
-    color: #fff;
-    padding: 18px 0 30px;
-    font-size: 13px;
-    line-height: 14px;
-    transition: background-color 2s ease-out 100ms;
-    grid-area: Footer;
-    } 
-
-.Footer .copyright
-{
-    padding-left: 25px;
-}
-
-
-.navbar{
+@media screen and (max-width: 600px){
+  .Page{
+    width: auto;
+    height: auto;
+    margin-bottom: 100px;
     display: flex;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    align-items: center;
-    background: linear-gradient(to right, #1E2F97, dodgerblue);
-    color: #fff;
-    justify-content: space-between;
-    transition: background-color 2s ease-out 100ms;
-    grid-area: navbar;
-}
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: all 0.2 linear;
 
-.navbar .logo{
-    font-size: 33px;
-    align-items: center; 
-    color: white;
-    font-weight: 600;
-    padding-left: 20px;
-}
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
-.navbar ul{
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 14px 28px;
-    display: flex;
-    list-style: none;
-}
-.navbar ul li
-{
-    margin: 0 5px;    
-}
-.navbar a.img1{
+    grid-template-areas: 
+    "content1"
+    "content2"
+    "content3"
+    "content4"
+    "content5";
+  }
 
-    display: flex;
-    justify-content: center;
-    padding-top: 0px;
-    padding-bottom: 4px;
-}
-.navbar ul li a{
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    text-decoration: none;
-    letter-spacing: 1px;
+  .content2{
     height: 100%;
-    padding: 8px 10px;
-    border-radius: 10px;
-    transition: all 0.5s ease;
-}
-.navbar a:hover, .navbar a.active
-{
-    background-color: white;
-    color: black;
-    height: 100%;
-    transition: all .5s ease ;
-}
-#toggle{
-    display: none;
-}
-.togglearea{
-    background-color: dodgerblue;
-    color: white;
-    display: flex;
-    justify-content: end;
-    padding: 10px;
-}
-.togglearea label
-{
-    background-color: white;
-    height: 35px;
-    width: 35px;
-    border-radius: 6px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.togglearea label span
-{
-   background-color: black;
-   height: 4px;
-   width: 80%;
-   margin: 2px 0px;
-   border-radius: 10px;
-}
-.togglearea{
-    display: none;
-}
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 
+    grid-template-areas: 
+    "topdonaterhead"
+    "Top-1"
+    "Top-2"
+    "Top-3";
+  }
 
-@media screen and (max-width: 480px){
-
-     .navbar
-    {
-        flex-direction: column;
-        display: none;
-    }
-    #toggle:checked + .navbar
-    {
-        display: flex;
-    }
-    .togglearea{
-        display: flex;
-    }
-    .navbar a:hover
-    {
-    background-color: white;
-    color: black;
-    }
 
 }
