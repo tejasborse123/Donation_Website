@@ -88,7 +88,7 @@ body{
 .content1{
   height: 450px;
   width: 100%;
-  background: #fff;
+  background: #ADD8E6;
   grid-area: content1;
   border-radius: 15px;
   min-width: 200px;
@@ -113,7 +113,7 @@ body{
   height: 40px;
   width: 100%;
   color: #E30B5D;
-  background: #fff;
+  background: #ADD8E6;
   grid-area: topdonaterhead;
   border-radius: 15px;
 }
@@ -151,7 +151,7 @@ body{
 .content3{
   height: 200px;
   width: 100%;
-  background: dodgerblue;
+  background: white;
   grid-area: content3;
   border-radius: 15px;
   font-size: 20px;
@@ -171,7 +171,7 @@ body{
 .content5{
   height: 200px;
   width: 100%;
-  background: dodgerblue;
+  background: white;
   grid-area: content5;
   border-radius: 15px;
   font-size: 20px;
@@ -180,13 +180,13 @@ body{
 }
 
 #donatebtn{
-    border-radius: 10px;
+    border-radius: 25px;
     border: none;
     margin-top: 30px;
     margin-bottom: 20px;
     font-size: 20;
     font-family: serif;
-    height: 40;
+    height: 35;
     width: 120;
     color: white;
     background: #6cc5eb;
@@ -205,13 +205,13 @@ body{
    }
 
   #receivebtn{
-    border-radius: 10px;
+    border-radius: 25px;
     border: none;
     margin-top: 30px;
     margin-bottom: 20px;
     font-size: 20;
     font-family: serif;
-    height: 40;
+    height: 35;
     width: 120;
     color: white;
     background: #6cc5eb;
