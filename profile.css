@@ -115,6 +115,7 @@ body{
 .container button{
 	margin-top: 25px;
 	position: relative;
+    border-style: none;
 	padding: 10px 30px;
 	width: 200px;
 	color: #fff;

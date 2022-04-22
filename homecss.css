@@ -52,9 +52,8 @@ html,body{
 }
 
 body{
-    background: linear-gradient( to right,#2193b0,#dd2476,#6cc5eb); 
+    background: white; 
     background-size: 400% 400%;
-    animation: animate-background 10s infinite ease-in-out;
 }
 
 @keyframes animate-background{
@@ -88,15 +87,17 @@ body{
 .content1{
   height: 450px;
   width: 100%;
-  background: #ADD8E6;
+  background: dodgerblue;
   grid-area: content1;
   border-radius: 15px;
   min-width: 200px;
 }
 
 .content2{
-  height: 200px;
+  height: 270px;
+  margin-top: 60px;
   width: 100%;
+  background: dodgerblue;
   grid-area: content2;
   border-radius: 15px;
   display: grid;
@@ -112,7 +113,7 @@ body{
 .topdonaterhead{
   height: 40px;
   width: 100%;
-  background: #ADD8E6;
+  background: dodgerblue;
   grid-area: topdonaterhead;
   border-radius: 15px;
 }
@@ -147,7 +148,8 @@ body{
 .content3{
   height: 200px;
   width: 100%;
-  background: white;
+  color: white;
+  background: dodgerblue;
   grid-area: content3;
   border-radius: 15px;
   font-size: 20px;
@@ -157,23 +159,37 @@ body{
 .content4{
   height: 200px;
   width: 100%;
-  background-color: white;
+  background-color: dodgerblue;
   grid-area: content4;
   border-radius: 15px;
   font-size: 20px;
   min-width: 200px;
+  color: white;
 }
 
 .content5{
   height: 200px;
   width: 100%;
-  background: white;
+  color: white;
+  background: dodgerblue;
   grid-area: content5;
   border-radius: 15px;
   font-size: 20px;
   min-width: 200px;
 }
+.content3:hover{
 
+    box-shadow: 0 0 12px black;
+}
+
+.content4:hover{
+
+    box-shadow: 0 0 12px black;
+}
+.content5:hover{
+
+    box-shadow: 0 0 12px black;
+}
 #donatebtn{
     border-radius: 25px;
     border: none;
@@ -189,7 +205,7 @@ body{
 
    #donatebtn:hover{
    
-    color: white;    
+    box-shadow: 0 0 12px black; 
      
 
    }
@@ -207,6 +223,11 @@ body{
     background: #6cc5eb;
    }
 
+   #cryptobtn:hover{
+
+    box-shadow: 0 0 12px black;
+}
+
   #receivebtn{
     border-radius: 25px;
     border: none;
@@ -219,6 +240,10 @@ body{
     color: white;
     background: #6cc5eb;
    }
+   #receivebtn:hover{
+
+    box-shadow: 0 0 12px black;
+}
 
 @media screen and (max-width: 600px){
   .Page{
