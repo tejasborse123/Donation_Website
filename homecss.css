@@ -112,7 +112,6 @@ body{
 .topdonaterhead{
   height: 40px;
   width: 100%;
-  color: #E30B5D;
   background: #ADD8E6;
   grid-area: topdonaterhead;
   border-radius: 15px;
@@ -121,7 +120,6 @@ body{
 .Top-1{
   height: 170px;
   width: 100%;
-  color: #E30B5D;
   background: #fff;
   grid-area: Top-1;
   border-radius: 25px;
@@ -131,7 +129,6 @@ body{
 .Top-2{
   height: 170px;
   width: 100%;
-  color: #E30B5D;
   background: #fff;
   grid-area: Top-2;
   border-radius: 25px;
@@ -141,7 +138,6 @@ body{
 .Top-3{
   height: 170px;
   width: 100%;
-  color: #E30B5D;
   background: #fff;
   grid-area: Top-3;
   border-radius: 25px;
@@ -155,16 +151,16 @@ body{
   grid-area: content3;
   border-radius: 15px;
   font-size: 20px;
-  color: #E30B5D;
   min-width: 200px;
 }
 
 .content4{
   height: 200px;
   width: 100%;
-  background: linear-gradient( to top,springgreen,yellow,springgreen);
+  background-color: white;
   grid-area: content4;
   border-radius: 15px;
+  font-size: 20px;
   min-width: 200px;
 }
 
@@ -175,7 +171,6 @@ body{
   grid-area: content5;
   border-radius: 15px;
   font-size: 20px;
-  color: #E30B5D;
   min-width: 200px;
 }
 
@@ -188,18 +183,26 @@ body{
     font-family: serif;
     height: 35;
     width: 120;
-    color: white;
     background: #6cc5eb;
+    color: white;
+   }
+
+   #donatebtn:hover{
+   
+    color: white;    
+     
+
    }
 
    #cryptobtn{
-    border-radius: 90px;
+    border-radius: 25px;
+    border-style: none;
     margin-top: 30px;
-    margin: 20px;
+    margin-bottom: 20px;
     font-size: 20;
     font-family: serif;
-    height: 75;
-    width: 75;
+    height: 35;
+    width: 120;
     color: white;
     background: #6cc5eb;
    }
