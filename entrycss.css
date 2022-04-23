@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+
 *{
   margin: 0;
   padding: 0;
@@ -9,7 +12,7 @@ html,body{
   height: 100%;
   width: 100%;
   place-items: center;
-  background: -webkit-linear-gradient(left, #a445b2, dodgerblue);
+  background-image: url(images/bganimation.gif);
 }
 ::selection{
   background: #fa4299;
