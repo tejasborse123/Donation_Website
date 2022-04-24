@@ -280,3 +280,86 @@ body{
 
 
 }
+
+@media screen and (min-width: 600px) and (max-width: 1300px){
+
+.Page{
+  padding-left: 10px;
+  margin-right: 10px;
+  margin-top: 12px;
+  display: grid;
+  height: 460px;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+
+  grid-template-areas: 
+  "content1 content2 content2 content2"
+  "content1 content3 content4 content5";
+  grid-gap: 0.5rem;
+  grid-row-gap: 0rem;
+}
+
+.content1{
+ height: 465px;
+  width: 100%; 
+}
+
+.content2{
+  height: 210px;
+  width: 100%;
+  display: grid;
+  grid-gap: 0.6rem;
+  padding: 10px;
+
+
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-areas: "topdonaterhead topdonaterhead topdonaterhead"
+                       " Top-1 Top-2 Top-3";
+  min-width: 200px;
+}
+
+.topdonaterhead{
+  height: 40px;
+  width: 100%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+  
+.Top-1{
+  height: 120px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.Top-2{
+  height: 120px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.Top-3{
+  height: 120px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.content3{
+  height: 202px;
+  width: 100%;
+}
+
+.content4{
+  height: 202px;
+  width: 100%;
+}
+
+.content5{
+  height: 202px;
+  width: 100%;
+}
+
+}
