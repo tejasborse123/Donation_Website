@@ -64,10 +64,13 @@ html,body{
 
 }
 
+
+@media screen and (min-width: 600px) and (max-width: 1300px){
+
 #cover{
 	height: 420px;
 	width: 1200px;
-	background-color: cyan;
+	background-color: cyan; 
 	display: grid;
 	grid-gap: 1rem;
 	padding: 20px;
@@ -90,7 +93,7 @@ html,body{
 }
 
 #two{
-	background-color: #5D3FD3;
+	background-color: dodgerblue;
 	grid-area: two;
 	height: 220px;
 	width: auto;
@@ -98,7 +101,7 @@ html,body{
 }
 
 #three{
-	background-color: #5D3FD3;
+	background-color: dodgerblue;
 	grid-area: three;
 	height: 220px;
 	width: auto;
@@ -106,7 +109,7 @@ html,body{
 }
 
 #four{
-	background-color: #5D3FD3;
+	background-color: dodgerblue;
 	grid-area: four;
 	height: 220px;
 	width: auto;
@@ -114,7 +117,7 @@ html,body{
 }
 
 #five{
-	background-color: #5D3FD3;
+	background-color: dodgerblue;
 	grid-area: five;
 	height: 220px;
 	width: auto;
@@ -122,7 +125,7 @@ html,body{
 }
 
 #six{
-	background-color: #5D3FD3;
+	background-color: dodgerblue;
 	grid-area: six;
 	height: 90px;
 	width: auto;
@@ -130,82 +133,137 @@ html,body{
 }
 
 
-#wrapper{
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	margin-top: 30px;
+.wrapper .icon i {
+color: #fff;
+transition: .4s linear;
 }
 
-#wrapper .icon{
-	position: relative;
-	border-radius: 50%;
-	padding: 15px;
-	margin: 10px;
-	width: 50px;
-	height: 50px;
-	font-size: 18px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	cursor: pointer;
+.wrapper {
+display: flex;
+justify-content: center;
+align-content: center;
+margin-top: 25px;
 }
 
-#wrapper .icon i{
-	color: #fff;
-	transition: .4s linear;
-	size: 30px;
+.wrapper .icon {
+position: relative;
+border-radius: 50%;
+padding: 15px;
+margin: 10px;
+width: 50px;
+height: 50px;
+font-size: 18px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+cursor: pointer
 }
 
-#wrapper .icon::before , #wrapper .icon::after{
-	content: "";
-	padding: absolute;
-	box-sizing: border-box;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	transition: .4s linear;
+.wrapper .icon::before {
+border-radius: 50%;
+border-left: 4px solid;
+border-right: 4px solid;
+transform: skewX(20deg);
+color: #fff;
 }
 
-#wrapper .icon:hover::before{
-	border-radius: 50%;
-	border-left: 4px solid;
-	border-right: 4px solid;
-	transform: skewX(20deg);
-	color: #fff;
+.wrapper .icon::after {
+border-radius: 50%;
+border-top: 4px solid;
+border-bottom: 4px solid;
+transform: skewY(-20deg);
+color: #fff;
 }
 
-#wrapper .icon:hover::after{
-	border-radius: 50%;
-	border-top: 4px solid;
-	border-bottom: 4px solid;
-	transform: skewY(20deg);
-	color: #fff;
+
+.wrapper .icon:hover::before {
+content: '';
+position: absolute;
+box-sizing: border-box;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+transition: .4s linear;
+border-radius: 50%;
+border-left: 4px solid;
+border-right: 4px solid;
+transform: skewX(20deg);
+color: #fff;
 }
 
-#wrapper .tooltip{
-	position: absolute;
-	top: 0;
-	font-size: 14px;
-	color: #ffffff;
-	padding: 5px 8px;
-	border-right: 5px;
-	box-shadow: 0px 10px 18px rgb(0,0,0,0.1);
-	opacity: 0;
-	pointer-events: none;
-	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+.wrapper .icon:hover::after {
+content: '';
+position: absolute;
+box-sizing: border-box;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+transition: .4s linear;
+border-radius: 50%;
+border-top: 4px solid;
+border-bottom: 4px solid;
+transform: skewY(-20deg);
+color: #fff;
 }
 
-#wrapper .icon:hover .tooltip{
-	top: -25px;
-	opacity: 7;
-	visibility: visible;
-	pointer-events: auto;
-	background-color: #fff;
-	color: #5D3FD3;
-	border-radius: 10px;
-	font-weight: 800;
+.wrapper .tooltip {
+position: absolute;
+top: 0;
+font-size: 14px;
+color: #ffffff;
+padding: 5px 8px;
+border-radius: 5px;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+pointer-events: none;
+transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+opacity: 0;
 }
 
+.wrapper .icon:hover .tooltip {
+top: -35px;
+opacity: 1;
+visibility: visible;
+pointer-events: auto;
+background-color: #000;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+transform: scale(.8);
+transition: .4s linear;
+}
+
+
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media screen and (max-width: 600px){
+
+	#cover{
+	height: auto;
+	width: auto;
+	margin: 100px;
+	display: grid;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: all 0.2 linear;
+	background-color: cyan; 
+	padding: 20px;
+
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+
+	grid-template-areas: "one"
+						 "two"
+						 "three"
+						 "four"
+						 "five"
+						 "six";
+	}
+
+
+}
