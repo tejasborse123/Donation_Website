@@ -19,14 +19,6 @@ html,body{
   color: #fff;
 }
 
-.loginimg{
-  
-  position: absolute;
-  top: 270px;
-  bottom: 30PX;
-  left: 10px;  
-}
-
 .entry{
   overflow: hidden;
   max-width: 390px;
