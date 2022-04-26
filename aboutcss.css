@@ -69,7 +69,7 @@ html,body{
 #cover{
 	height: 420px;
 	width: 1200px;
-	background-color: cyan; 
+	background-color: #fff; 
 	display: grid;
 	grid-gap: 1rem;
 	padding: 20px;
@@ -244,7 +244,7 @@ transition: .4s linear;
 #cover{
 	height: 420px;
 	width: 1200px;
-	background-color: cyan; 
+	background-color: #fff; 
 	display: grid;
 	grid-gap: 1rem;
 	padding: 20px;
@@ -425,7 +425,7 @@ transition: .4s linear;
     justify-content: space-around;
     flex-wrap: wrap;
     transition: all 0.2 linear;
-	background-color: cyan; 
+	background-color: #fff; 
 	padding: 20px;
 
 	grid-template-columns: 1fr;

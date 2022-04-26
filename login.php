@@ -20,6 +20,10 @@
 
 		if ($count>0) {
 			echo "Login Successfull";
+
+			session_start();
+			$LoggedIn = true;
+			$_SESSION['Loggedin']=$LoggedIn;
 		}
 
 		else{
