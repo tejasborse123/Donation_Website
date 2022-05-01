@@ -10,6 +10,8 @@
 html,body{
   align-items: center;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 #loading{
@@ -87,10 +89,20 @@ body{
 .content1{
   height: 450px;
   width: 100%;
-  background: dodgerblue;
   grid-area: content1;
   border-radius: 15px;
   min-width: 200px;
+  overflow: hidden;
+  box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
+}
+
+.content1 .images{
+  height: 100%;
+  width: 100%;
+}
+.images img{
+  height: 100%;
+  width: 100%;
 }
 
 .content2{

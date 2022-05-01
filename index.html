@@ -17,32 +17,49 @@
 
 <!--- //////////////////////////////////////////////////////////////////////// Navbar///////////////////////////////////////////////////////////////////////// -->
      <div class="mcontainer">
-                          <!---Navigation Bar -->
+          <!---Navigation Bar -->
 
-                                <div class="togglearea">
-                                  <label for="toggle">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                  </label>
-                                </div>
-                          <input type="checkbox" id="toggle" title="toggle">
-                            <div class="navbar">
-                              
-                                     <div class="logo"><label id="lg">Save Life</label></div>
-                                      <ul>
-                                         <li><a class="active" href="#"> Home</a></li>
-                                         <li><a href="contact.html"> Contact</a></li>
-                                         <li><a href="about.html"> About</a></li> 
-                                         <button style="background-color: dodgerblue; border: none;"><li><a class="img1" href="profile.html"><img src="images/profile-line.png" alt="account" width="25" height="23" ></a></li></button>
-                                      </ul>
-                            </div>
+                <div class="togglearea">
+                  <label for="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </label>
+                </div>
+          <input type="checkbox" id="toggle" title="toggle">
+            <div class="navbar">
+              
+                     <div class="logo"><label id="lg">Save Life</label></div>
+                      <ul>
+                         <li><a class="active" href="#"> Home</a></li>
+                         <li><a href="contact.html"> Contact</a></li>
+                         <li><a href="about.html"> About</a></li> 
+                         <button style="background-color: dodgerblue; border: none;"><li><a class="img1" href="profile.html"><img src="images/profile-line.png" alt="account" width="25" height="23" ></a></li></button>
+                      </ul>
+            </div>
        </div>
 
- <!--- //////////////////////////////////////////////////////////////////////// Actual Content///////////////////////////////////////////////////////////////////////// -->
+ <!--- Content start --->
+
 <div class="Page">
 
-      <div class="content1"><br><br><br>Slides and images</div>
+<!--- Slider --->
+
+      <div class="content1">
+        
+          <div class="images">
+            <img src="imagws/logo.png">
+            <img src="images/slider1.jpg">
+            <img src="images/slider2.jpg">
+            <img src="images/slider3.jpg">
+            <img src="images/slider4.jpg">
+            <img src="images/slider5.jpg">
+          </div>
+      </div>
+
+
+
+
       <div class="content2">
             <div class="topdonaterhead" style="color: white;" >
                     <h1>!!..Top Donater..!!</h1>
@@ -82,8 +99,25 @@
           
       </footer>
 
-<!--- //////////////////////////////////////////////////////////////////////// JavaScript ///////////////////////////////////////////////////////////////////////// -->
+<!--- JavaScript --->
     <script>
+
+      var indexValue = 0;
+           function slideShow(){
+             setTimeout(slideShow, 2500);
+             var x;
+             const img = document.querySelectorAll("img");
+             for(x = 0; x < img.length; x++){
+               img[x].style.display = "none";
+             }
+             indexValue++;
+             if(indexValue > img.length){indexValue = 1}
+             img[indexValue -1].style.display = "block";
+           }
+           slideShow();
+
+
+
       var preloader = document.getElementById('loading');
 
       function myFunction() {
@@ -91,9 +125,4 @@
       }
 
     </script>
-<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 </body>
-
-
-
- 
