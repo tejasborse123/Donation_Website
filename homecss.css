@@ -293,7 +293,8 @@ body{
 
 }
 
-@media screen and (min-width: 600px) and (max-width: 1300px){
+@media screen and (min-width: 600px) and (max-width: 1300px)
+{
 
 .Page{
   padding-left: 10px;
@@ -314,6 +315,17 @@ body{
 .content1{
  height: 465px;
   width: 100%; 
+  padding: 10px;
+  background-color: dodgerblue;
+}
+
+.content1 .images{
+  height: 100%;
+  width: 100%;
+}
+.images img{
+  height: 100%;
+  width: 100%;
 }
 
 .content2{
