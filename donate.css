@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;  
+    transition: background-color 2s ease-out 100ms;
+}
+
+html,body{
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1300px)
+{
+		.Pane{
+			height: auto;
+			width: auto;
+			display: grid;
+			grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+			grid-gap: 5rem;
+			margin-top: 55px;
+			padding: 20px;
+		}
+
+		.one{
+			min-height: 208px;
+			min-width: 200px;
+			background-color: dodgerblue;
+			border-radius: 20px;
+		}
+
+		.two{
+			min-height: 208px;
+			min-width: 200px;
+			background-color: dodgerblue;
+			border-radius: 20px;
+		}
+
+		.three{
+			min-height: 208px;
+			min-width: 200px;
+			background-color: dodgerblue;
+			border-radius: 20px;
+		}
+
+		.Pane2{
+			height: auto;
+			width: auto;
+			display: grid;
+			grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+			grid-gap: 5rem;
+			margin-top: 0px;
+			padding: 20px;
+		}
+
+		.four{
+			min-height: 206px;
+			min-width: 200px;
+			background-color: dodgerblue;
+			border-radius: 20px;
+		}
+
+		.five{
+			min-height: 206px;
+			min-width: 200px;
+			background-color: dodgerblue;
+			border-radius: 20px;
+		}
+
+		.six{
+			min-height: 206px;
+			min-width: 200px;
+			background-color: dodgerblue;
+			border-radius: 20px;
+		}
+}

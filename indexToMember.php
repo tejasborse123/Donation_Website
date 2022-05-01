@@ -4,7 +4,7 @@
               {
                      if( isset  ($_COOKIE['password']))
                      {
-                          header("Location: Donate.html");
+                          header("Location: Member.html");
                      }
               }
               else{
