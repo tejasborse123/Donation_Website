@@ -1,12 +1,13 @@
- <head>
-  <meta charset="utf-8">
-  <title>Save Life</title>
-  <link rel="stylesheet" type="text/css" href="homecss.css">
-  <link rel="stylesheet" type="text/css" href="common.css"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Save Life</title>
+	<link rel="stylesheet" type="text/css" href="common.css">
+	<link rel="stylesheet" type="text/css" href="homecss.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ 	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
-  <body onload="myFunction()">
+<body onload="myFunction()">
 
     <div id="loading">
        <div class="loader">
@@ -15,8 +16,9 @@
         </div>
     </div>
 
-<!--- //////////////////////////////////////////////////////////////////////// Navbar///////////////////////////////////////////////////////////////////////// -->
-     <div class="mcontainer">
+<div class="FullPage">
+<!--- //////////////////////////////////////////////Navbar////////////////////////////////////////////////////////////// -->
+    <div class="mcontainer">
           <!---Navigation Bar -->
 
                 <div class="togglearea">
@@ -26,107 +28,79 @@
                     <span></span>
                   </label>
                 </div>
-          <input type="checkbox" id="toggle" title="toggle">
-            <div class="navbar">
-              
-                     <div class="logo"><label id="lg">Save Life</label></div>
-                      <ul>
-                         <li><a class="active" href="#"> Home</a></li>
-                         <li><a href="contact.html"> Contact</a></li>
-                         <li><a href="about.html"> About</a></li> 
-                         <button style="background-color: dodgerblue; border: none;"><li><a class="img1" href="profile.html"><img src="images/profile-line.png" alt="account" width="25" height="23" ></a></li></button>
-                      </ul>
-            </div>
-       </div>
-
- <!--- Content start --->
-
-<div class="Page">
-
-<!--- Slider -->
-
-      <div class="content1">
-        
-         <!-- <div class="images">
-            <img src="images/logo.png">
-            <img src="images/bgimg.png">
-            <img src="images/slider1.jpg">
-            <img src="images/slider2.jpg">
-            <img src="images/slider3.jpg">
-            <img src="images/slider4.jpg">
-            <img src="images/slider5.jpg">
-          </div> -->
-
-      </div>
+         		 <input type="checkbox" id="toggle" title="toggle">
+		            <div class="navbar">
+		              
+		                     <div class="logo"><label id="lg">Save Life</label></div>
+		                      <ul>
+		                         <li><a class="active" href="#"> Home</a></li>
+		                         <li><a href="contact.html"> Contact</a></li>
+		                         <li><a href="about.html"> About</a></li> 
+		                         <button style="background-color: dodgerblue; border: none;"><li><a class="img1" href="profile.html"><img src="images/profile-line.png" alt="account" width="25" height="23" ></a></li></button>
+		                      </ul>
+		            </div>
+    </div>
 
 
+    <section class="sec">
+    	<div class="logo2"> 
+			&nbsp;&nbsp;<img src="images/logo.png" style="height: 100px; width: 100px;"> 
+	    	<input type="checkbox" id="toggler">
+	    	<label for="toggler" style="display: none;"><i class="ri-menu-line"></i></label>
 
+	    	<div class="wrapper">
+		        <div class="search-input">
+		          <input type="search" placeholder="Search here..">
+		          <div class="icon"> <img src="images/searchicon.png" alt="search" height="20px" width="20px"> </div> 
+		        </div>
+		    </div>
 
-      <div class="content2">
-            <div class="topdonaterhead" style="color: white;" >
-                    <h1>!!..Top Donater..!!</h1>
-            </div>
-            <div class="Top-1">
-                1st : Name & Amount <br> Profile Logo
-            </div>
-            <div class="Top-2">
-                2nd: Name & Amount <br> Profile Logo
-            </div>
-            <div class="Top-3">
-                3rd: Name & Amount <br> Profile Logo
-            </div>
-      </div>
-      <div class="content3"><br><br><b>Donate</b><br><br><br>
-  
-               <button class="contentbtn" id="donatebtn" name="DonateBtn"><a href="indexToDonate.php" style=" text-decoration: none;"> Donate now </a></button>
-        
-      </div>
-      <div class="content4"><br><br><b>Donate Money</b><br><br><br>
+		    <a href="indexToDonate.php"><button class="donateBtn">Donate</button></a>
+			<a href="indexToMember.php"><button class="joinBtn">Join</button></a>
+		</div>
+    </section>
 
-                  <button class="CryptoBtn" id="cryptobtn"> <a href="https://commerce.coinbase.com/checkout/6efba239-0c58-40bf-94dd-cf3035058a28" style=" text-decoration: none; ">Crypto</a> </button>
+    <div class="ActualContent">
+		    <div class="content1">
+		            <div class="topdonaterhead" style="color: white;" >
+		                    <h1>!!..Top Donater..!!</h1>
+		            </div>
+		            <div class="Top-1">
+		                1st : Name & Amount <br> Profile Logo
+		            </div>
+		            <div class="Top-2">
+		                2nd: Name & Amount <br> Profile Logo
+		            </div>
+		            <div class="Top-3">
+		                3rd: Name & Amount <br> Profile Logo
+		            </div>
+		            <div class="Allbuttons">
+		            	<button class="ReceiveBtn" id="receivebtn" name="ReceiveBtn"> <a href="indexToMember.php" style=" text-decoration: none; ">Membership</a> </button>&nbsp;&nbsp;
 
-      </div>
-      <div class="content5"><br><br><b>MEMBERSHIP</b><br><br><br>
+		            	<button class="CryptoBtn" id="cryptobtn"> <a href="https://commerce.coinbase.com/checkout/6efba239-0c58-40bf-94dd-cf3035058a28" style=" text-decoration: none; ">Donate Crypto</a> </button>&nbsp;&nbsp;
 
-             <button class="ReceiveBtn" id="receivebtn" name="ReceiveBtn"><a href="indexToMember.php" style=" text-decoration: none;"> JOIN </a></button>
-
-      </div>
+		            	<button class="CryptoBtn" id="cryptobtn"> <a href="#" style=" text-decoration: none; ">Donate Money</a> </button>
+		            </div>
+		    </div>
+		    <div class="content1">
+		    	hello
+		    </div>
+    </div>
+	<footer class="footer">
+		  <div class="copyright">
+		  	  <h3> All rights reserved. © Niket Sonawane © Tejas Borse </h3>
+		  </div>
+	</footer>
 
 </div>
-
-      <footer class="Footer">
-          <div class="copyright">
-            <h3> All rights reserved. © Niket Sonawane © Tejas Borse </h3>
-          </div>
-          
-      </footer>
-
-<!--- JavaScript --->
-    <script>
-
-      var indexValue = 1;
-           function slideShow(){
-             setTimeout(slideShow, 2500);
-             var x;
-             const img = document.querySelectorAll("img");
-             for(x = 0; x < img.length; x++){
-               img[x].style.display = "none";
-             }
-             indexValue++;
-             if(indexValue > img.length){indexValue = 1}
-             img[indexValue -1].style.display = "block";
-           }
-           slideShow();
-    </script>
-
-    <script>
-
-      var preloader = document.getElementById('loading');
-
-      function myFunction() 
-      {
-        preloader.style.display = 'none';
-      }
-
-    </script>
 </body>
+
+	<script>
+      var preloader = document.getElementById('loading');
+		      function myFunction() 
+		      {
+		        preloader.style.display = 'none';
+		      }
+    </script>
+
+</html>
