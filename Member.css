@@ -11,3 +11,33 @@ html,body{
   align-items: center;
   justify-content: center;
 }
+
+.form-container{
+	margin-top: 70px;
+}
+
+.form-container h1{
+	font-weight: 900;
+}
+
+.top{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.textfields input{
+	height: 50px;
+	width: auto;
+	padding: 10px;
+	margin: 10px;
+}
+
+#btn{
+	height: 50px;
+	width: 200px;
+	border-radius: 5px;
+	background-color: dodgerblue;
+	border: none;
+	font-size: 18px;
+}
