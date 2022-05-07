@@ -12,19 +12,6 @@ html,body{
   height: 100%;
   width: 100%;
   place-items: center;
-  background-image: url(images/bganimation.gif);
-}
-
-@keyframes animate-background{
-    0%{
-        background-position: 0 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0 50%;
-    }
 }
 
 #loading{
@@ -69,7 +56,7 @@ html,body{
 #cover{
 	height: 420px;
 	width: 1200px;
-	background-color: #fff; 
+	background-color: dodgerblue; 
 	display: grid;
 	grid-gap: 1rem;
 	padding: 20px;
@@ -92,7 +79,7 @@ html,body{
 }
 
 #two{
-	background-color: dodgerblue;
+	background-color: #fff;
 	grid-area: two;
 	height: 220px;
 	width: auto;
@@ -100,7 +87,7 @@ html,body{
 }
 
 #three{
-	background-color: dodgerblue;
+	background-color: #fff;
 	grid-area: three;
 	height: 220px;
 	width: auto;
@@ -108,7 +95,7 @@ html,body{
 }
 
 #four{
-	background-color: dodgerblue;
+	background-color: #fff;
 	grid-area: four;
 	height: 220px;
 	width: auto;
@@ -124,7 +111,7 @@ html,body{
 }
 
 #six{
-	background-color: dodgerblue;
+	background-color: #fff;
 	grid-area: six;
 	height: 90px;
 	width: auto;
@@ -244,7 +231,7 @@ transition: .4s linear;
 #cover{
 	height: 420px;
 	width: 1200px;
-	background-color: #fff; 
+	background-color: dodgerblue; 
 	display: grid;
 	grid-gap: 1rem;
 	padding: 20px;
@@ -255,6 +242,7 @@ transition: .4s linear;
 	grid-template-areas: "one one one one"
 						 "two three four five"
 						 "six six six six";
+    border-radius: 40px;
 }
 
 #one{
@@ -267,7 +255,7 @@ transition: .4s linear;
 }
 
 #two{
-	background-color: dodgerblue;
+	background-color: #fff;
 	grid-area: two;
 	height: 220px;
 	width: auto;
@@ -275,7 +263,7 @@ transition: .4s linear;
 }
 
 #three{
-	background-color: dodgerblue;
+	background-color: #fff;
 	grid-area: three;
 	height: 220px;
 	width: auto;
@@ -283,7 +271,7 @@ transition: .4s linear;
 }
 
 #four{
-	background-color: dodgerblue;
+	background-color: #fff;
 	grid-area: four;
 	height: 220px;
 	width: auto;
@@ -291,7 +279,7 @@ transition: .4s linear;
 }
 
 #five{
-	background-color: dodgerblue;
+	background-color: #fff;
 	grid-area: five;
 	height: 220px;
 	width: auto;
@@ -299,7 +287,7 @@ transition: .4s linear;
 }
 
 #six{
-	background-color: dodgerblue;
+	background-color: #111;
 	grid-area: six;
 	height: 90px;
 	width: auto;
@@ -387,7 +375,7 @@ color: #fff;
 position: absolute;
 top: 0;
 font-size: 14px;
-color: #ffffff;
+color: #111;
 padding: 5px 8px;
 border-radius: 5px;
 box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -401,7 +389,7 @@ top: -35px;
 opacity: 1;
 visibility: visible;
 pointer-events: auto;
-background-color: #000;
+background-color: #fff;
 }
 
 .wrapper .icon:hover span,

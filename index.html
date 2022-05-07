@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
-  <body  onload="myFunction()">
+  <body onload="myFunction()">
 
     <div id="loading">
        <div class="loader">
@@ -43,18 +43,20 @@
 
 <div class="Page">
 
-<!--- Slider --->
+<!--- Slider -->
 
       <div class="content1">
         
-          <div class="images">
-            <img src="imagws/logo.png">
+         <!-- <div class="images">
+            <img src="images/logo.png">
+            <img src="images/bgimg.png">
             <img src="images/slider1.jpg">
             <img src="images/slider2.jpg">
             <img src="images/slider3.jpg">
             <img src="images/slider4.jpg">
             <img src="images/slider5.jpg">
-          </div>
+          </div> -->
+
       </div>
 
 
@@ -102,7 +104,7 @@
 <!--- JavaScript --->
     <script>
 
-      var indexValue = 0;
+      var indexValue = 1;
            function slideShow(){
              setTimeout(slideShow, 2500);
              var x;
@@ -115,12 +117,14 @@
              img[indexValue -1].style.display = "block";
            }
            slideShow();
+    </script>
 
-
+    <script>
 
       var preloader = document.getElementById('loading');
 
-      function myFunction() {
+      function myFunction() 
+      {
         preloader.style.display = 'none';
       }
 

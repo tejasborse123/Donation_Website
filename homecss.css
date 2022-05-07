@@ -87,13 +87,14 @@ body{
 }
 
 .content1{
-  height: 450px;
+  height: 410px;
   width: 100%;
   grid-area: content1;
   border-radius: 15px;
   min-width: 200px;
   overflow: hidden;
   box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
+  box-sizing: border-box;
 }
 
 .content1 .images{
