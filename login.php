@@ -22,13 +22,14 @@
 		$count = mysqli_num_rows($result);
 
 		if ($count>0) {
-			echo "Login Successfull";
+			//echo "Login Successfull";
 
 			if ( isset(  $_POST['rememberPassword']  )  ) {
 				setcookie('username', $username , time()+(10*365*24*60*60) , "/");
 				setcookie('password', $password , time()+(10*365*24*60*60) , "/");
 				//echo "Cookie set Successfully";
 			}
+			header("location:index.html");
 		}
 
 		else{

@@ -39,12 +39,17 @@
           <p><h1>SAVE LIFE FOUNDATION MEMBERSHIP FORM</h1></p><br>
           <div class="top">
                   <div class="textfields">
-                         <h3>Tell Us About Yourself</h3><br>
+                       <h3>Tell Us About Yourself</h3><br>
 
-                         <input type="text" name="Name" placeholder="First Name" required="required">
-                         <input type="text" name="Surname" placeholder="Last Name" required="required"><br>
-                         <input type="number" name="Age" placeholder="Enter your Age" required="required">
-                         <input type="text" name="gender" placeholder="Gender">
+                       <input type="text" name="Name" placeholder="First Name" required="required">
+                       <input type="text" name="Surname" placeholder="Last Name" required="required"><br>
+                       <input type="number" name="Age" placeholder="Enter your Age" required="required">
+                        <select name="gender" id="gender" style="padding: 10px; height: 50px; width: 188px; margin: 10px;">
+                              <option>Select Gender</option>
+                              <option value="volvo">Male</option>
+                              <option value="saab">Female</option>
+                              <option value="mercedes">Other</option>
+                        </select>
                   </div>
 
                   <div class="textfields">
@@ -52,8 +57,8 @@
 
                          <input type="text" name="city" placeholder="City" required="required">
                          <input type="text" name="district" placeholder="District" required="required"><br>
-                         <input type="number" name="state" placeholder="State" required="required">
-                         <input type="text" name="country" placeholder="Country">
+                         <input type="text" name="state" placeholder="State" required="required">
+                         <input type="text" name="country" placeholder="Country" required="required">
                     
                   </div>
           </div>
@@ -61,8 +66,8 @@
           <div class="textfields"> 
                           <h3>How Can We Contact You </h3><br>
 
-                         <input type="text" name="Name" placeholder="First Name" required="required">
-                         <input type="text" name="Surname" placeholder="Last Name" required="required"><br>
+                         <input type="email" name="email" placeholder="Email Address" required="required">
+                         <input type="number" name="Phone" placeholder="Phone Number"><br>
 
                          <input type="submit" name="submit" id="btn">           
           </div>

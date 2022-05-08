@@ -12,131 +12,43 @@ html,body{
   justify-content: center;
 }
 
-@media screen and (min-width: 1300px)
-{
-		.Pane{
-			height: auto;
-			width: auto;
-			display: grid;
-			grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
-			grid-gap: 5rem;
-			margin-top: 55px;
-			padding: 20px;
-		}
-
-		.one{
-			min-height: 208px;
-			min-width: 200px;
-			background-color: dodgerblue;
-			border-radius: 20px;
-		}
-
-		.two{
-			min-height: 208px;
-			min-width: 200px;
-			background-color: dodgerblue;
-			border-radius: 20px;
-		}
-
-		.three{
-			min-height: 208px;
-			min-width: 200px;
-			background-color: dodgerblue;
-			border-radius: 20px;
-		}
-
-		.Pane2{
-			height: auto;
-			width: auto;
-			display: grid;
-			grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
-			grid-gap: 5rem;
-			margin-top: 0px;
-			padding: 20px;
-		}
-
-		.four{
-			min-height: 206px;
-			min-width: 200px;
-			background-color: dodgerblue;
-			border-radius: 20px;
-		}
-
-		.five{
-			min-height: 206px;
-			min-width: 200px;
-			background-color: dodgerblue;
-			border-radius: 20px;
-		}
-
-		.six{
-			min-height: 206px;
-			min-width: 200px;
-			background-color: dodgerblue;
-			border-radius: 20px;
-		}
+.Part1{
+	height: 55vh;
+	width: all;
+	background-color: blue;
+	margin-top: 75px;
+	padding: 20px;
+	margin-left:20px;
+	margin-right: 20px;
+	border-radius: 20px;
 }
-@media screen and (min-width: 600px) and (max-width: 2300px)
-{
-		.Pane{
-			height: auto;
-			width: auto;
-			display: grid;
-			grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
-			grid-gap: 5rem;
-			margin-top: 55px;
-			padding: 20px;
-		}
 
-		.one{
-			min-height: 208px;
-			min-width: 200px;
-			background-color: dodgerblue;
-			border-radius: 20px;
-		}
+.Part2{
+	height: 50vh
+	width:auto;
+	background-color: dodgerblue;
+	padding: 10px 0px;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 20px;
+	margin: 0px 20px;
+}
 
-		.two{
-			min-height: 208px;
-			min-width: 200px;
-			background-color: dodgerblue;
-			border-radius: 20px;
-		}
+.child{
+	height: auto;
+	width: auto;
+	padding: 20px;
+	background-color: blue;
+	border-radius: 50px;
+}
 
-		.three{
-			min-height: 208px;
-			min-width: 200px;
-			background-color: dodgerblue;
-			border-radius: 20px;
-		}
+.Part2 button{
+	height: 50px;
+	width: 100px;
+	border-radius: 10px;
+	border: none;
+}
 
-		.Pane2{
-			height: auto;
-			width: auto;
-			display: grid;
-			grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
-			grid-gap: 5rem;
-			margin-top: 0px;
-			padding: 20px;
-		}
-
-		.four{
-			min-height: 206px;
-			min-width: 200px;
-			background-color: dodgerblue;
-			border-radius: 20px;
-		}
-
-		.five{
-			min-height: 206px;
-			min-width: 200px;
-			background-color: dodgerblue;
-			border-radius: 20px;
-		}
-
-		.six{
-			min-height: 206px;
-			min-width: 200px;
-			background-color: dodgerblue;
-			border-radius: 20px;
-		}
+.Part2 button:hover{
+  box-shadow: 0 0 12px black;
 }

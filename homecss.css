@@ -222,7 +222,7 @@ html,body{
   justify-content: space-around;
 }
 
-#receivebtn:hover{
+#receivebtn:hover, .donateBtn:hover, .joinBtn:hover, .CryptoBtn:hover, .PaymentBtn:hover, .wrapper:hover{
   box-shadow: 0 0 12px black;
 }
 
