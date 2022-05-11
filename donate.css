@@ -57,53 +57,54 @@ html,body{
 
 @media screen and (min-width: 1300px){
 
-.Part1{
-	height: 60vh;
-	width: all;
-	margin-top: 85px;
-	padding: 20px;
-	margin-left:20px;
-	margin-right: 20px;
-	grid-gap: 5rem;
-	border-radius: 20px;
-	display: flex;
-	justify-content: space-around;
-}
+	.Part1{
+		height: 60vh;
+		width: all;
+		margin-top: 85px;
+		padding: 20px;
+		margin-left:20px;
+		margin-right: 20px;
+		grid-gap: 5rem;
+		border-radius: 20px;
+		display: flex;
+		justify-content: space-around;
+	}
 
-.Part2{
-	height: 50vh
-	width:auto;
-	padding-top: 30px;
-	padding: 10px 0px;
-	display: flex;
-	justify-content: space-around;
-	border-radius: 20px;
-	margin: 6px 36px
-}
+	.Part2{
+		height: 50vh
+		width:auto;
+		padding-top: 30px;
+		padding: 10px 0px;
+		display: flex;
+		justify-content: space-around;
+		border-radius: 20px;
+		margin: 6px 36px
+	}
 
-.Part1 .child1{
-  background-color: dodgerblue;
-  height: 430px;
-  width: 100%;
-  border-radius: 14px;
-}
+	.Part1 .child1{
+	  background-color: dodgerblue;
+	  height: 430px;
+	  width: 100%;
+	  border-radius: 14px;
+	}
 
-.child{
-	height: auto;
-	width: auto;
-	padding: 20px;
-	background-color: blue;
-	border-radius: 40px;
-}
+	.child{
+		height: auto;
+		width: auto;
+		padding: 20px;
+		background-color: blue;
+		border-radius: 40px;
+	}
 
-.Part2 button{
-	height: 50px;
-	width: 100px;
-	border-radius: 10px;
-	border: none;
-}
+	.Part2 button{
+		height: 50px;
+		width: 100px;
+		border-radius: 10px;
+		border: none;
+	}
 
-.Part2 button:hover{
-  box-shadow: 0 0 12px black;
-}
+	.Part2 button:hover{
+	  box-shadow: 0 0 12px black;
+	}
+
 }
