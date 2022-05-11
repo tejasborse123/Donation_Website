@@ -20,6 +20,8 @@ html,body{
 	margin-left:20px;
 	margin-right: 20px;
 	border-radius: 20px;
+	display: flex;
+	grid-gap: 0.8rem;	
 }
 
 .Part2{
@@ -32,7 +34,15 @@ html,body{
 	border-radius: 20px;
 	margin-top: 30px;
 	margin: 30px;
+	background-color: dodgerblue;
 }
+
+.Part1 .child1{
+	  background-color: dodgerblue;
+	  height: 300px;
+	  width: 100%;
+	  border-radius: 14px;
+	}
 
 .child{
 	height: auto;
@@ -55,7 +65,7 @@ html,body{
 }
 
 
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 1400px){
 
 	.Part1{
 		height: 60vh;
