@@ -67,7 +67,7 @@ html,body{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
+  background-color: green;
   padding: 10px;
 }
 
@@ -128,12 +128,10 @@ html,body{
 .logo2 button{
   background: linear-gradient(to right,#00BFFF,dodgerblue);
   width: 120px;
-  height: 100%;
   outline: none;
   color: #fff;
   height: 45px;
   border-radius: 5px;
-  border-style: none;
   margin-top: 20px;
   box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
   font-weight: 1000;
@@ -157,7 +155,7 @@ html,body{
 }
 
 .content1{
-  height: 405px;
+  height: 325px;
   margin-top: 10px;
   width: 100%;
   background: dodgerblue;
@@ -177,7 +175,7 @@ html,body{
 }
 
 .topdonaterhead{
-  height: 30px;
+  height: 40px;
   width: 100%;
   background: dodgerblue;
   grid-area: topdonaterhead;
@@ -216,8 +214,7 @@ html,body{
   outline: none;
   color: #fff;
   height: 45px;
-  border-style: none;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
 }
 
@@ -229,7 +226,7 @@ html,body{
   box-shadow: 0 0 12px black;
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (min-width: 600px){
   .menu{
     width: 100%;
     min-height: 0;
@@ -241,32 +238,4 @@ html,body{
     align-items: center;
     cursor: pointer;
   }
-  .donateBtn{
-  height: 100%;
-  width: 100%;
 }
-
-.joinBtn{
-  height: 100%;
-  width: 100%;
- }
-
- #logoimg
- {
-    visibility: hidden;
- }
-
- .wrapper
- {
-    min-width: 100px;
-    margin-left: 10px;
- }
-
- .content1{
-    clear: both;
-    display: flex;
-    flex-direction: column;
- }
-
-}
-
