@@ -15,7 +15,6 @@ html,body{
 .Part1{
 	height: 50vh;
 	width: all;
-	background-color: blue;
 	margin-top: 75px;
 	padding: 20px;
 	margin-left:20px;
@@ -27,7 +26,6 @@ html,body{
 	height: 50vh
 	width:auto;
 	padding-top: 30px;
-	background-color: dodgerblue;
 	padding: 10px 0px;
 	display: flex;
 	justify-content: space-around;
@@ -41,12 +39,13 @@ html,body{
 	width: auto;
 	padding: 20px;
 	background-color: blue;
-	border-radius: 50px;
+	border-radius: 40px;
 }
 
 .Part2 button{
 	height: 50px;
 	width: 100px;
+	cursor: pointer;
 	border-radius: 10px;
 	border: none;
 }
@@ -59,13 +58,13 @@ html,body{
 @media screen and (min-width: 1300px){
 
 .Part1{
-	height: 50vh;
+	height: 60vh;
 	width: all;
-	background-color: blue;
-	margin-top: 75px;
+	margin-top: 85px;
 	padding: 20px;
 	margin-left:20px;
 	margin-right: 20px;
+	grid-gap: 5rem;
 	border-radius: 20px;
 	display: flex;
 	justify-content: space-around;
@@ -75,20 +74,18 @@ html,body{
 	height: 50vh
 	width:auto;
 	padding-top: 30px;
-	background-color: dodgerblue;
 	padding: 10px 0px;
 	display: flex;
 	justify-content: space-around;
 	border-radius: 20px;
-	margin-top: 30px;
-	margin: 25px;
+	margin: 6px 36px
 }
 
 .Part1 .child1{
-  background-color: red;
-  height: 300px;
-  width: 300px;
-  border-radius: 10px;
+  background-color: dodgerblue;
+  height: 430px;
+  width: 100%;
+  border-radius: 14px;
 }
 
 .child{
@@ -96,7 +93,7 @@ html,body{
 	width: auto;
 	padding: 20px;
 	background-color: blue;
-	border-radius: 50px;
+	border-radius: 40px;
 }
 
 .Part2 button{
