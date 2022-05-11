@@ -13,7 +13,7 @@ html,body{
 }
 
 .Part1{
-	height: 55vh;
+	height: 50vh;
 	width: all;
 	background-color: blue;
 	margin-top: 75px;
@@ -26,12 +26,14 @@ html,body{
 .Part2{
 	height: 50vh
 	width:auto;
+	padding-top: 30px;
 	background-color: dodgerblue;
 	padding: 10px 0px;
 	display: flex;
 	justify-content: space-around;
 	border-radius: 20px;
-	margin: 0px 20px;
+	margin-top: 30px;
+	margin: 30px;
 }
 
 .child{
@@ -51,4 +53,65 @@ html,body{
 
 .Part2 button:hover{
   box-shadow: 0 0 12px black;
+}
+
+
+@media screen and (min-width: 1300)
+{
+   *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;  
+    transition: background-color 2s ease-out 100ms;
+}
+
+html,body{
+  align-items: center;
+  justify-content: center;
+}
+
+.Part1{
+	height: 50vh;
+	width: all;
+	background-color: blue;
+	margin-top: 75px;
+	padding: 20px;
+	margin-left:20px;
+	margin-right: 20px;
+	border-radius: 20px;
+}
+
+.Part2{
+	height: 50vh
+	width:auto;
+	padding-top: 30px;
+	background-color: dodgerblue;
+	padding: 10px 0px;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 20px;
+	margin-top: 30px;
+	margin: 30px;
+}
+
+.child{
+	height: auto;
+	width: auto;
+	padding: 20px;
+	background-color: blue;
+	border-radius: 50px;
+}
+
+.Part2 button{
+	height: 50px;
+	width: 100px;
+	border-radius: 10px;
+	border: none;
+}
+
+.Part2 button:hover{
+  box-shadow: 0 0 12px black;
+}
 }
