@@ -56,7 +56,7 @@ html,body{
 }
 
 
-@media screen and (min-width: 1300)
+@media screen and (min-width: 1300px){
 
 .Part1{
 	height: 50vh;
@@ -68,6 +68,7 @@ html,body{
 	margin-right: 20px;
 	border-radius: 20px;
 	display: flex;
+	justify-content: space-around;
 }
 
 .Part2{
@@ -83,10 +84,10 @@ html,body{
 	margin: 25px;
 }
 
-.Part1.child1{
+.Part1 .child1{
   background-color: red;
-  height: 200px;
-  width: auto;
+  height: 300px;
+  width: 300px;
 }
 
 .child{
