@@ -57,20 +57,6 @@ html,body{
 
 
 @media screen and (min-width: 1300)
-{
-   *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    align-items: center;
-    text-align: center;  
-    transition: background-color 2s ease-out 100ms;
-}
-
-html,body{
-  align-items: center;
-  justify-content: center;
-}
 
 .Part1{
 	height: 50vh;
@@ -81,6 +67,7 @@ html,body{
 	margin-left:20px;
 	margin-right: 20px;
 	border-radius: 20px;
+	display: flex;
 }
 
 .Part2{
@@ -94,6 +81,12 @@ html,body{
 	border-radius: 20px;
 	margin-top: 30px;
 	margin: 25px;
+}
+
+.Part1.child1{
+  background-color: red;
+  height: 200px;
+  width: auto;
 }
 
 .child{
