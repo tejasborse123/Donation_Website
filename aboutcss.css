@@ -16,9 +16,11 @@ html,body{
 
 #loading{
   position: fixed;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   background: orange no-repeat center;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 .loader {

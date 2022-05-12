@@ -15,7 +15,7 @@ html,body{
 .Part1{
 	height: 50vh;
 	width: all;
-	margin-top: 75px;
+	margin-top: 95px;
 	padding: 20px;
 	margin-left:20px;
 	margin-right: 20px;
@@ -27,18 +27,16 @@ html,body{
 .Part2{
 	height: 50vh
 	width:auto;
-	padding-top: 30px;
 	padding: 10px 0px;
 	display: flex;
 	justify-content: space-around;
 	border-radius: 20px;
-	margin-top: 30px;
-	margin: 30px;
+	margin: 0px 10px;
 }
 
 .Part1 .child1{
 	  background-color: dodgerblue;
-	  height: 300px;
+	  height: 350px;
 	  width: 100%;
 	  border-radius: 14px;
 	}
@@ -61,8 +59,9 @@ html,body{
 
 .Part2 button:hover{
   box-shadow: 0 0 12px black;
+  background-color: red;
+  transition: 1s ease;
 }
-
 
 @media screen and (min-width: 1400px){
 
