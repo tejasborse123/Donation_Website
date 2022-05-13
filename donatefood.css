@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    align-items: center;  
+    transition: background-color 2s ease-out 100ms;
+}
+
+.cover{
+	height: 472px;
+	width: all;
+	background-color: cyan;
+	margin-top: 65px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 0px 20px;
+}
+
+.content1{
+	height: 200px;
+	width: 100%;
+	background-color: #fff;
+	padding: 20px;
+	font-size: 28px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.content1 p{
+	background-color: #fff;
+	border-radius: 10px;
+	margin: 5px;
+	width: auto;
+	cursor: pointer;
+}
+
+.d1{
+	padding: 10px;
+	background-color: #717171;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+
+.content1 input{
+	height: 30px;
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+    cursor: pointer;
+}

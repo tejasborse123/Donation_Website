@@ -59,7 +59,7 @@ html,body{
 
 .Part2 button:hover{
   box-shadow: 0 0 12px black;
-  background-color: red;
+  background: linear-gradient(to bottom,red,yellow);
   transition: 1s ease;
 }
 
