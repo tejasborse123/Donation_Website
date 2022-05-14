@@ -25,6 +25,17 @@
 			<div id="moveBack">
 				Have an Account..?? <a href="entry.html">LOGIN</a>
 			</div>
+
+			<div class="signup-link">
+                            <label>
+                              <?php 
+                                    $labelOtpFail = $_SESSION['labelOtpFail'];
+                                    echo $labelOtpFail; 
+                                    $labelOtpFail = "" ;
+                                    $_SESSION['labelOtpFail']=$labelOtpFail;
+                              ?> 
+                            </label>
+            </div>
 		</form>
 	</div>
 </body>

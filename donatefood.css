@@ -9,21 +9,24 @@
 .cover{
 	height: 472px;
 	width: all;
-	background-color: cyan;
+	background-color: dodgerblue;
 	margin-top: 65px;
 	margin-left: 10px;
 	margin-right: 10px;
 	padding: 0px 20px;
+	border-radius: 30px;
 }
 
 .content1{
-	height: 200px;
+	margin-top: 20px;
+	height: 270px;
 	width: 100%;
 	background-color: #fff;
 	padding: 20px;
 	font-size: 28px;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-around;
+	border-radius: 20px;
 }
 
 .content1 p{
@@ -31,21 +34,55 @@
 	border-radius: 10px;
 	margin: 5px;
 	width: auto;
-	cursor: pointer;
 }
 
 .d1{
 	padding: 10px;
-	background-color: #717171;
+	background-color: dodgerblue;
 	margin-right: 150px;
 	border-radius: 20px;
+	width: 50%;
 }
 
-.content1 input{
+.d1 label{
+	padding: 30px;
+	cursor: pointer;
+}
+
+input{
 	height: 30px;
+	width: all;
+	margin-top: 10px;
 }
 
 input[type=checkbox] {
     transform: scale(1.5);
     cursor: pointer;
+}
+
+.paragraph{
+	padding: 0px 20px;
+}
+
+.content2{
+	height: 50px;
+	width: 100%;
+	background-color: #fff;
+	margin: 20px 0px;
+	align-items: center;
+	padding: 5px;
+	justify-content: center;
+	border-radius: 50px;
+}
+
+#submit{
+	margin: 0px 40%;
+	height: 40px;
+	width: 20%;
+	background: linear-gradient(to bottom,dodgerblue,cyan);
+	border-radius: 30px;
+}
+
+#submit:hover{
+	background: linear-gradient(to bottom,cyan,dodgerblue);
 }

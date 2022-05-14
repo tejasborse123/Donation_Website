@@ -188,12 +188,15 @@ form .btn input[type="submit"]{
   cursor: pointer;
 }
 
+.signup-link label:hover{
+    display: none;
+  }
+
 
 @media screen and (max-width: 1100px)
 {
 
    .loginimg{
-
     visibility: hidden;
    }
 

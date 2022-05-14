@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    align-items: center;  
+    transition: background-color 2s ease-out 100ms;
+}
+
+.cover{
+	height: 472px;
+	width: all;
+	background-color: dodgerblue;
+	margin-top: 65px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 0px 20px;
+	border-radius: 30px;
+}
+
