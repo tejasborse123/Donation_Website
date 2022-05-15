@@ -38,24 +38,147 @@
 
     <div class="cover">
 
-	    
+    		<div class="row">
+    			<div class="progress"></div>
+	    			<div class="col">Food</div>
+	    			<div class="col">Clothes</div>
+	    			<div class="col">Sport Equipment</div>
+	    			<div class="col">Study Material</div>
+	    			<div class="col">Medicines</div>
+	    			<div class="col">Yoga Equipment</div>
+	    			<div class="col">Books</div>
+	    			<div class="col">Others</div>
+    			</div>	
 
+	    		<div class="form">
+
+	    			<form id="form1">
+	    				<h2>Donate Food</h2>
+
+	    				<div class="btn-box">
+	    					<button id="Next1">Next</button>
+	    				</div>
+	    			</form>
+
+	    			<form id="form2">
+	    				<h2>Donate Clothes</h2>
+
+	    				<div class="btn-box">
+	    					<button id="Back2">Back</button>
+	    					<button id="Next2">Next</button>
+	    				</div>
+	    			</form>
+
+	    			<form id="form3">
+	    				<h2>Sport Equipment</h2>
+
+	    				<div class="btn-box">
+	    					<button id="Back3">Back</button>
+	    					<button id="Next3">Next</button>
+	    				</div>
+	    			</form>
+
+	    			<form id="form4">
+	    				<h2>Study Material</h2>
+
+	    				<div class="btn-box">
+	    					<button id="Back4">Back</button>
+	    					<button id="Next4">Next</button>
+	    				</div>
+	    			</form>
+
+	    			<form id="form5">
+	    				<h2>Medicines</h2>
+
+	    				<div class="btn-box">
+	    					<button id="Back5">Back</button>
+	    					<button id="Next5">Next</button>
+	    				</div>
+	    			</form>
+
+	    			<form id="form6">
+	    				<h2>Yoga Equipments</h2>
+
+	    				<div class="btn-box">
+	    					<button id="Back6">Back</button>
+	    					<button id="Next6">Next</button>
+	    				</div>
+	    			</form>
+
+	    			<form id="form7">
+	    				<h2>Books</h2>
+
+	    				<div class="btn-box">
+	    					<button id="Back7">Back</button>
+	    					<button id="Next7">Next</button>
+	    				</div>
+	    			</form>
+
+	    			<form id="form8">
+	    				<h2>Others</h2>
+
+	    				<div class="btn-box">
+	    					<button id="Back8">Back</button>
+	    					<button id="Next8">Submit</button>
+	    				</div>
+	    			</form>
+
+	    		
+	    		</div>
+	    	</div>
     </div>
 
-     <footer class="footer" style="text-align: center;">
-		  <div class="copyright">
-		  	  <h3> All rights reserved. © Niket Sonawane © Tejas Borse </h3>
-		  </div>
-	</footer>
+    <script >
+	
+	var form1 = document.getElementById('form1');
+	var form2 = document.getElementById('form2');
+	var form3 = document.getElementById('form3');
+	var form4 = document.getElementById('form4');
+	var form5 = document.getElementById('form5');
+	var form6 = document.getElementById('form6');
+	var form7 = document.getElementById('form7');
+	var form8 = document.getElementById('form8');
 
-  </body>	
+	var Next1 = document.getElementById('Next1');
+	var Next2 = document.getElementById('Next2');
+	var Next3 = document.getElementById('Next3');
+	var Next4 = document.getElementById('Next4');
+	var Next5 = document.getElementById('Next5');
+	var Next6 = document.getElementById('Next6');
+	var Next7 = document.getElementById('Next7');
+	var Next8 = document.getElementById('Next8');
+
+	var back2 = document.getElementById('back2');
+	var back3 = document.getElementById('back3');
+	var back4 = document.getElementById('back4');
+	var back5 = document.getElementById('back5');
+	var back6 = document.getElementById('back6');
+	var back7 = document.getElementById('back7');
+	var back8 = document.getElementById('back8');
+
+	Next1.onclick = function()
+	{
+		form1.style.left = "10px";
+		form2.style.left = "420px";
+	};
+
+	</script>
+
+
+<footer class="footer" style="text-align: center;">
+  <div class="copyright">
+  	  <h3> All rights reserved. © Niket Sonawane © Tejas Borse </h3>
+  </div>
+</footer>
+
+</body>	
     
-    <script>
-      var preloader = document.getElementById('loading');
-		      function myFunction() 
-		      {
-		        preloader.style.display = 'none';
-		      }
-    </script>
+<script>
+  var preloader = document.getElementById('loading');
+	      function myFunction() 
+	      {
+	        preloader.style.display = 'none';
+	      }
+</script>
 
 </html>

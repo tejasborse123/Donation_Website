@@ -53,10 +53,16 @@
                         <div class="signup-link">
                             <label>
                               <?php 
-                                    $label = $_SESSION['label'];
-                                    echo $label; 
-                                    $label = "" ;
-                                    $_SESSION['label']=$label;
+                                    if(!isset($_SESSION['label']))
+                                    {
+                                      $label = "" ;
+                                    }
+                                    else{
+                                      $label = $_SESSION['label'];
+                                      echo $label; 
+                                      $label = "" ;
+                                      $_SESSION['label']=$label;
+                                    }
                               ?> 
                             </label>
                         </div>
