@@ -109,6 +109,16 @@
     justify-content: space-around;
 }
 
+#loginstatus{
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: dodgerblue;
+  color: white;
+  font-family: monospace;
+  font-size: 14px;
+  border-style: none;
+}
 .Footer .copyright
 {
     padding-left: 25px;
