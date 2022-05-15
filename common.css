@@ -105,6 +105,8 @@
     line-height: 14px;
     transition: background-color 2s ease-out 100ms;
     grid-area: Footer;
+    display: flex;
+    justify-content: space-around;
 }
 
 .Footer .copyright
