@@ -3,13 +3,15 @@
 	if (isset($_POST['submit'])) {
 		
 		$selected = $_POST['Donate'];
-		//echo "You Selected : ";
+		echo "You Selected : ";
 
 		foreach ($selected as $key => $values) {
-			//echo $values." , 	";
+			echo $values." , 	";
+
+			include "new.html";
 		}
 
-		include "form.html";
+		
 	}
 	
 ?>

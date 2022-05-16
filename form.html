@@ -39,16 +39,17 @@
     <div class="cover">
 
     		<div class="row">
-    			<div class="progress"></div>
-	    			<div class="col">Food</div>
-	    			<div class="col">Clothes</div>
-	    			<div class="col">Sport Equipment</div>
-	    			<div class="col">Study Material</div>
-	    			<div class="col">Medicines</div>
-	    			<div class="col">Yoga Equipment</div>
-	    			<div class="col">Books</div>
-	    			<div class="col">Others</div>
+    			<div class="progress" id="progress"></div>
+	    			<div id="col1" class="col">1-Food</div>
+	    			<div id="col2" class="col">2-Clothes</div>
+	    			<div id="col3" class="col">3-Sports</div>
+	    			<div id="col4" class="col">4-Study</div>
+	    			<div id="col5" class="col">5-Medicines</div>
+	    			<div id="col6" class="col">6-Yoga</div>
+	    			<div id="col7" class="col">7-Books</div>
+	    			<div id="col8" class="col">8-Others</div>
     			</div>	
+    		
 
 	    		<div class="form">
 
@@ -56,7 +57,7 @@
 	    				<h2>Donate Food</h2>
 
 	    				<div class="btn-box">
-	    					<button id="Next1">Next</button>
+	    					<input type="button" name="button" id="Next1" value="Next" onclick="n1()">
 	    				</div>
 	    			</form>
 
@@ -64,8 +65,8 @@
 	    				<h2>Donate Clothes</h2>
 
 	    				<div class="btn-box">
-	    					<button id="Back2">Back</button>
-	    					<button id="Next2">Next</button>
+	    					<input type="button" name="button" id="Back2" value="Back" onclick="b2()">
+	    					<input type="button" name="button" id="Next2" value="Next" onclick="n2()">
 	    				</div>
 	    			</form>
 
@@ -73,8 +74,8 @@
 	    				<h2>Sport Equipment</h2>
 
 	    				<div class="btn-box">
-	    					<button id="Back3">Back</button>
-	    					<button id="Next3">Next</button>
+	    					<input type="button" name="button" id="Back3" value="Back" onclick="b3()">
+	    					<input type="button" name="button" id="Next3" value="Next" onclick="n3()">
 	    				</div>
 	    			</form>
 
@@ -82,8 +83,8 @@
 	    				<h2>Study Material</h2>
 
 	    				<div class="btn-box">
-	    					<button id="Back4">Back</button>
-	    					<button id="Next4">Next</button>
+	    					<input type="button" name="button" id="Back4" value="Back" onclick="b4()">
+	    					<input type="button" name="button" id="Next4" value="Next" onclick="n4()">
 	    				</div>
 	    			</form>
 
@@ -91,8 +92,8 @@
 	    				<h2>Medicines</h2>
 
 	    				<div class="btn-box">
-	    					<button id="Back5">Back</button>
-	    					<button id="Next5">Next</button>
+	    					<input type="button" name="button" id="Back5" value="Back" onclick="b5()">
+	    					<input type="button" name="button" id="Next5" value="Next" onclick="n5()">
 	    				</div>
 	    			</form>
 
@@ -100,8 +101,8 @@
 	    				<h2>Yoga Equipments</h2>
 
 	    				<div class="btn-box">
-	    					<button id="Back6">Back</button>
-	    					<button id="Next6">Next</button>
+	    					<input type="button" name="button" id="Back6" value="Back" onclick="b6()">
+	    					<input type="button" name="button" id="Next6" value="Next" onclick="n6()">
 	    				</div>
 	    			</form>
 
@@ -109,8 +110,8 @@
 	    				<h2>Books</h2>
 
 	    				<div class="btn-box">
-	    					<button id="Back7">Back</button>
-	    					<button id="Next7">Next</button>
+	    					<input type="button" name="button" id="Back7" value="Back" onclick="b7()">
+	    					<input type="button" name="button" id="Next7" value="Next" onclick="n7()">
 	    				</div>
 	    			</form>
 
@@ -118,8 +119,8 @@
 	    				<h2>Others</h2>
 
 	    				<div class="btn-box">
-	    					<button id="Back8">Back</button>
-	    					<button id="Next8">Submit</button>
+	    					<input type="button" name="button" id="Back8" value="Back" onclick="b8()">
+	    					<input type="submit" name="button" id="Next8" value="Submit" onclick="submit()">
 	    				</div>
 	    			</form>
 
@@ -128,57 +129,23 @@
 	    	</div>
     </div>
 
-    <script >
-	
-	var form1 = document.getElementById('form1');
-	var form2 = document.getElementById('form2');
-	var form3 = document.getElementById('form3');
-	var form4 = document.getElementById('form4');
-	var form5 = document.getElementById('form5');
-	var form6 = document.getElementById('form6');
-	var form7 = document.getElementById('form7');
-	var form8 = document.getElementById('form8');
-
-	var Next1 = document.getElementById('Next1');
-	var Next2 = document.getElementById('Next2');
-	var Next3 = document.getElementById('Next3');
-	var Next4 = document.getElementById('Next4');
-	var Next5 = document.getElementById('Next5');
-	var Next6 = document.getElementById('Next6');
-	var Next7 = document.getElementById('Next7');
-	var Next8 = document.getElementById('Next8');
-
-	var back2 = document.getElementById('back2');
-	var back3 = document.getElementById('back3');
-	var back4 = document.getElementById('back4');
-	var back5 = document.getElementById('back5');
-	var back6 = document.getElementById('back6');
-	var back7 = document.getElementById('back7');
-	var back8 = document.getElementById('back8');
-
-	Next1.onclick = function()
-	{
-		form1.style.left = "10px";
-		form2.style.left = "420px";
-	};
-
-	</script>
-
-
-<footer class="footer" style="text-align: center;">
-  <div class="copyright">
-  	  <h3> All rights reserved. © Niket Sonawane © Tejas Borse </h3>
-  </div>
-</footer>
+			<footer class="footer" style="text-align: center;">
+			  <div class="copyright">
+			  	  <h3> All rights reserved. © Niket Sonawane © Tejas Borse </h3>
+			  </div>
+			</footer>
 
 </body>	
-    
-<script>
-  var preloader = document.getElementById('loading');
-	      function myFunction() 
-	      {
-	        preloader.style.display = 'none';
-	      }
-</script>
 
+<script>
+	var preloader = document.getElementById('loading');
+	function myFunction() 
+	{
+	preloader.style.display = 'none';
+	}
+</script>
+ 
+ 	<script src="form.js"></script>   
 </html>
+
+ 
