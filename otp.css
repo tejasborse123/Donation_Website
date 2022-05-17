@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    align-items: center;
     transition: background-color 2s ease-out 100ms;
 }
 
@@ -10,12 +9,17 @@ html,body{
 	display: grid;
   	height: 100%;
   	width: 100%;
- 	place-items: center;
- 	background: linear-gradient(to right,#00BFFF,#E30B5D);
+ 	background-image: url(images/bgotp.jpg);
+ 	background-size: contain;
+ 	background-repeat: no-repeat;
+ 	background-position: center;
 }
 
 #container{
 	text-align: center;
+	margin-left: 680px;
+	margin-top: 114px;
+	height: 340px;
 	overflow: hidden;
   	max-width: 390px;
 	background: #fff;
