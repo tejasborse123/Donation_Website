@@ -91,6 +91,17 @@ html,body{
 	position: absolute;
 }
 
+.inputs{
+	margin-left: 60px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+    border-radius: 10px;
+    border-style: none;
+    height: 30px;
+    width: 250px;
+}
+
 .progress{
 	position: absolute;
 	width: 150px;
@@ -118,6 +129,7 @@ h2{
 }
 
 .cover .form form{
+	align-items: center;
 	width: 400px;
 	height: 400px;
 	top: 10px;
@@ -128,8 +140,9 @@ h2{
 }
 
 .form{
+	align-items: center;
   width: 420px;
-  height: 400px;
+  height: 500px;
   background-color: dodgerblue;
   border-radius: 20px;
   flex-wrap: wrap;
@@ -170,7 +183,6 @@ h2{
 } 
 
 .btn-box{
-	margin-top: 280px;
 	height: 50px;
 	width: 100%;
 	background-color: #fff;
