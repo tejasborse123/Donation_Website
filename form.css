@@ -140,9 +140,9 @@ h2{
 }
 
 .form{
-	align-items: center;
+  align-items: center;
   width: 420px;
-  height: 500px;
+  height: 390px;
   background-color: dodgerblue;
   border-radius: 20px;
   flex-wrap: wrap;
@@ -190,6 +190,7 @@ h2{
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 15%;
+	margin-top: 25px;
 }
 
 #Next1{
