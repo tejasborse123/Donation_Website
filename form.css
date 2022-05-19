@@ -9,6 +9,7 @@
 html,body{
   height: 90%;
   width: 100%;
+  background-image: url(images/bganimation.gif);
  }
 
 #loading{
@@ -64,7 +65,7 @@ html,body{
 	display: grid;
 	place-items: center;
 	position: relative;
-	background-image: url("images/");
+	background-image: url(images/bganimation.gif);
 	background-size: cover;
 }
 
@@ -79,8 +80,9 @@ html,body{
 	color: white;
 	overflow: hidden;
 	top: 15px;
-	background-color: grey;
+	background-color: dodgerblue;
 	border-radius: 30px;
+	cursor: pointer;
 }
 
 .col{
@@ -149,18 +151,22 @@ h2{
 
 #col1{
 	left: 10px;
+	cursor: pointer;
 }
 
 #col2{
 	left: 150px;
+	cursor: pointer;
 }
 
 #col3{
 	left: 290px;
+	cursor: pointer;
 }
 
 #col4 ,#col5 ,#col6 ,#col7 ,#col8{
 	left: 430px;
+	cursor: pointer;
 } 
 
 .btn-box{
@@ -182,11 +188,12 @@ h2{
 	padding-bottom: 5px;
 	margin-left: 55px;
 	position: absolute;
-	margin-left: 
+	cursor: pointer;
 }
 
 #Next2, #Next3, #Next4, #Next5, #Next6, #Next7, #Next8{
 	margin-left: 35px;
+	cursor: pointer;
 }
 
 .btn-box input{
@@ -196,6 +203,7 @@ h2{
 	border: none;
 	outline: none;
 	background: linear-gradient(to right,cyan,cyan);
+	cursor: pointer;
 }
 
 form h2{
