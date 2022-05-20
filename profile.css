@@ -247,6 +247,7 @@ body{
 	width: 350px;
 	border-radius: 50px;
 	background-color: #ADD8E6;
+    padding: 10px;
 }
 
 @keyframes shine{
@@ -256,6 +257,23 @@ body{
 	to{
 		background-position: center 200%;
 	}
+}
+
+.Circle{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+
+.username{
+    height: 50px;
+    width: auto;
+    background-color: #fff;
+    border-radius: 50px;
 }
 
 @media screen and (max-width: 480px){
