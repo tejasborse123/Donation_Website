@@ -132,6 +132,10 @@ html,body{
 	border-radius: 50px;
 }
 
+.logoanim{
+	    background: no-repeat;
+	}
+
 
 .wrapper .icon i {
 color: #fff;

@@ -10,6 +10,7 @@ html,body{
   width: 100%;
   background-image: url(images/bganimation.gif);
   background-position: center;
+  place-items: center;
 }
 ::selection{
   background: #fa4299;
@@ -17,16 +18,13 @@ html,body{
 }
 
 .entry{
-  margin-top: 25px;
-  margin-left: 400px;
-  overflow: hidden;
-  max-width: 420px;
-  background: #fff;
-  padding: 50px;
-  height: 560px;
-  border-radius: 5px;
-  flex-wrap: wrap;
-  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+ overflow: hidden;
+ max-width: 390px;
+ background-color: #fff;
+ padding: 30px;
+ border-radius: 5px;
+ flex-wrap: wrap;
+ box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
 }
 .entry .title-text{
   display: flex;
