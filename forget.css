@@ -8,7 +8,7 @@ html,body{
   height: 100%;
   width: 100%;
   place-items: center;
-  background: linear-gradient(to top,dodgerblue,#F75151,#E30B5D,dodgerblue);
+ background: linear-gradient(76deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
 }
 
 #wrapper{
