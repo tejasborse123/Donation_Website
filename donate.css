@@ -2,117 +2,87 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    align-items: center;
-    text-align: center;  
+    align-items: center;  
     transition: background-color 2s ease-out 100ms;
 }
 
-html,body{
-  align-items: center;
-  justify-content: center;
-}
-
-.Part1{
-	height: 50vh;
+.cover{
+	height: 472px;
 	width: all;
-	margin-top: 95px;
-	padding: 20px;
-	margin-left:20px;
-	margin-right: 20px;
-	border-radius: 20px;
-	display: flex;
-	grid-gap: 0.8rem;	
+	background-color: dodgerblue;
+	margin-top: 65px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 0px 20px;
+	border-radius: 30px;
 }
 
-.Part2{
-	height: 50vh
-	width:auto;
-	padding: 10px 0px;
+.content1{
+	margin-top: 20px;
+	height: 270px;
+	width: 100%;
+	background-color: #fff;
+	padding: 20px;
+	font-size: 28px;
 	display: flex;
 	justify-content: space-around;
 	border-radius: 20px;
-	margin: 0px 10px;
 }
 
-.Part1 .child1{
-	  background-color: dodgerblue;
-	  height: 350px;
-	  width: 100%;
-	  border-radius: 14px;
-	}
-
-.child{
-	height: auto;
-	width: auto;
-	padding: 20px;
-	background-color: blue;
-	border-radius: 40px;
-}
-
-.Part2 button{
-	height: 50px;
-	width: 100px;
-	cursor: pointer;
+.content1 p{
+	background-color: #fff;
 	border-radius: 10px;
-	border: none;
+	margin: 5px;
+	width: auto;
 }
 
-.Part2 button:hover{
-  box-shadow: 0 0 12px black;
-  background: linear-gradient(to bottom,red,yellow);
-  transition: 1s ease;
+.d1{
+	padding: 10px;
+	background-color: dodgerblue;
+	margin-right: 150px;
+	border-radius: 20px;
+	width: 50%;
 }
 
-@media screen and (min-width: 1400px){
+.d1 label{
+	padding: 30px;
+	cursor: pointer;
+}
 
-	.Part1{
-		height: 60vh;
-		width: all;
-		margin-top: 85px;
-		padding: 20px;
-		margin-left:20px;
-		margin-right: 20px;
-		grid-gap: 5rem;
-		border-radius: 20px;
-		display: flex;
-		justify-content: space-around;
-	}
+input{
+	height: 30px;
+	width: all;
+	margin-top: 10px;
+}
 
-	.Part2{
-		height: 50vh
-		width:auto;
-		padding-top: 30px;
-		padding: 10px 0px;
-		display: flex;
-		justify-content: space-around;
-		border-radius: 20px;
-		margin: 6px 36px
-	}
+input[type=checkbox] {
+    transform: scale(1.5);
+    cursor: pointer;
+}
 
-	.Part1 .child1{
-	  background-color: dodgerblue;
-	  height: 430px;
-	  width: 100%;
-	  border-radius: 14px;
-	}
+.paragraph{
+	padding: 0px 20px;
+}
 
-	.child{
-		height: auto;
-		width: auto;
-		padding: 20px;
-		background-color: blue;
-		border-radius: 40px;
-	}
+.content2{
+	height: 50px;
+	width: 100%;
+	background-color: #fff;
+	margin: 20px 0px;
+	align-items: center;
+	padding: 5px;
+	justify-content: center;
+	border-radius: 50px;
+}
 
-	.Part2 button{
-		height: 50px;
-		width: 100px;
-		border-radius: 10px;
-		border: none;
-	}
+#submit{
+	margin: 0px 40%;
+	height: 40px;
+	width: 20%;
+	background: linear-gradient(to bottom,dodgerblue,cyan);
+	border-radius: 30px;
+}
 
-	.Part2 button:hover{
-	  box-shadow: 0 0 12px black;
-	}
-
+#submit:hover{
+	background: linear-gradient(to bottom,cyan,dodgerblue);
 }
