@@ -1,0 +1,84 @@
+<html>
+    <head>
+      <title>Save Life</title>
+      <link rel="stylesheet" type="text/css" href="donate.css">
+      <link rel="stylesheet" type="text/css" href="common.css">
+    </head>
+    <body onload="myFunction()">
+
+          <div id="loading">
+             <div class="loader">
+                      <div class="loader loader-inner">   
+                      </div>
+              </div>
+          </div>
+      
+             <div class="mcontainer">
+          <!---Navigation Bar -->
+
+                <div class="togglearea">
+                  <label for="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </label>
+                </div>
+             <input type="checkbox" id="toggle" title="toggle">
+                <div class="navbar">
+                  
+                         <div class="logo"><label id="lg">Save Life</label></div>
+                          <ul>
+                             <li><a href="index.html"> Home</a></li>
+                             <li><a href="contact.html"> Contact</a></li>
+                             <li><a href="about.html"> About</a></li> 
+                             <button style="background-color: dodgerblue; border: none;"><li><a class="img1" href="profile.html"><img src="images/profile-line.png" alt="account" width="25" height="23" ></a></li></button>
+                          </ul>
+                </div>
+    </div>
+
+    <div class="cover">
+
+      <form action="donate.php" method="POST">
+
+          <p><h1 style="text-align: center;"> MAKE A DONATION </h1></p>
+            
+            <li style="font-size: 28px; background-color: white; padding: 10px; border-radius: 50px;" >What would you Like to donate..??</li>
+          <div class="content1">
+            <div class="d1">
+              <p class="paragraph"><input type="checkbox" name="Donate[]" value="Food" id="Food"><label for="Food">Food</label></p>
+              <p class="paragraph"><input type="checkbox" name="Donate[]" value="Clothes" id="Clothes"><label for="Clothes">Clothes</label></p>
+              <p class="paragraph"><input type="checkbox" name="Donate[]" value="Sport" id="Sport"><label for="Sport">Sport Equipments</label></p>
+              <p class="paragraph"><input type="checkbox" name="Donate[]" value="Study" id="Study"><label for="Study">Study Material</label></p>
+              </div>
+
+              <div class="d1"> 
+              <p class="paragraph"><input type="checkbox" name="Donate[]" value="Medicines" id="Medicines"><label for="Medicines">Medicines</label></p>
+              <p class="paragraph"><input type="checkbox" name="Donate[]" value="Yoga" id="Yoga"><label for="Yoga">Yoga Equipments</label></p>
+              <p class="paragraph"><input type="checkbox" name="Donate[]" value="Books" id="Books"><label for="Books">Books</label></p>
+              <p class="paragraph"><input type="checkbox" name="Donate[]" value="Others" id="Others"><label for="Others">Others</label></p>
+            </div>
+          </div>
+          <div class="content2">
+              <input type="submit" name="submit" value=" NEXT " id="submit">
+          </div>
+      </form>
+
+    </div>
+
+     <footer class="footer" style="text-align: center;">
+      <div class="copyright">
+          <h3> All rights reserved. © Niket Sonawane © Tejas Borse </h3>
+      </div>
+  </footer>
+
+  </body> 
+    
+    <script>
+      var preloader = document.getElementById('loading');
+          function myFunction() 
+          {
+            preloader.style.display = 'none';
+          }
+    </script>
+
+</html>

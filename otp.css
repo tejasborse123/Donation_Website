@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: background-color 2s ease-out 100ms;
+}
+
+html,body{
+	display: grid;
+  	height: 100%;
+  	width: 100%;
+ 	background-image: url(images/bgotp.jpg);
+ 	background-size: contain;
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+}
+
+#container{
+	text-align: center;
+	margin-left: 680px;
+	margin-top: 114px;
+	height: 340px;
+	overflow: hidden;
+  	max-width: 390px;
+	background: #fff;
+ 	padding: 30px;
+  	border-radius: 5px;
+    flex-wrap: wrap;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+    border-radius: 30px;
+}
+
+#lbl{
+	height: 40px;
+    width: 100%;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+}
+
+#sendOtp{
+	height: 40px;
+    width: 100%;
+}
+
+#enterOTP{
+    height: 35px;
+    margin-bottom: 20px;
+	width: 100%;
+	outline: none;
+	padding-left: 15px;
+	border-radius: 15px;
+	border: 1px solid lightgrey;
+	border-bottom-width: 2px;
+	font-size: 17px;
+	transition: all 0.3s ease;
+}
+
+#btn{
+	height: 35px;
+    width: 200px;	
+    border: none;
+    cursor: pointer;
+	border-radius: 15px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 30px;
+	color: white;
+	font-size: 18px;
+	background: -webkit-linear-gradient(right, #a445b2, dodgerblue);
+}
+
+#modifyNum{
+	height: 50px;
+    width: 100%;
+}
+
+#moveBack{
+	height: 50px;
+    width: 100%;
+    color: #00BFFF;
+}

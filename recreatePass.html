@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SAVE LIFE</title>
+	<link rel="stylesheet" type="text/css" href="recreatePass.css">
+</head>
+<body>
+	<div id="block">
+		<form action="recreatePass.php" method="POST">
+			<div id="division">
+				<h1>Change Password</h1>
+			</div>
+			<div id="division">
+				<input type="text" name="password" id="password" placeholder="New Password">
+			</div>
+			<div id="division">
+				<input type="text" name="cpassword" id="password" placeholder="Confirm Password">
+			</div>
+			<div id="division">
+				<input type="submit" name="" id="btn">
+			</div>
+			<div id="division">
+						------------------ OR ------------------ 
+			</div>
+			<div id="division">
+				<a href="entry.html"><button id="button">Back To LOGIN</button></a>
+			</div>
+			<div id="division">
+                <label>
+                  <?php 
+                        $labels = $_SESSION['labels'];
+                        echo $labels; 
+                  ?> 
+                </label>
+            </div>
+         </form>
+	</div>
+</body>
+</html>

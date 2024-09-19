@@ -1,0 +1,183 @@
+<html>
+		<head>
+			<title>Save Life</title>
+			<link rel="stylesheet" type="text/css" href="form.css">
+			<link rel="stylesheet" type="text/css" href="common.css">
+		</head>
+		<body onload="myFunction()">
+
+			    <div id="loading">
+			       <div class="loader">
+			                <div class="loader loader-inner">   
+			                </div>
+			        </div>
+			    </div>
+			
+             <div class="mcontainer">
+          <!---Navigation Bar -->
+
+                <div class="togglearea">
+                  <label for="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </label>
+                </div>
+         		 <input type="checkbox" id="toggle" title="toggle">
+		            <div class="navbar">
+		              
+		                     <div class="logo"><label id="lg">Save Life</label></div>
+		                      <ul>
+		                         <li><a href="index.html"> Home</a></li>
+		                         <li><a href="contact.html"> Contact</a></li>
+		                         <li><a href="about.html"> About</a></li> 
+		                         <button style="background-color: dodgerblue; border: none;"><li><a class="img1" href="profile.html"><img src="images/profile-line.png" alt="account" width="25" height="23" ></a></li></button>
+		                      </ul>
+		            </div>
+    </div>
+
+    <div class="cover">
+
+    		<div class="row">
+    			<div class="progress" id="progress"></div>
+	    			<div id="col1" class="col">1-Food</div>
+	    			<div id="col2" class="col">2-Clothes</div>
+	    			<div id="col3" class="col">3-Sports</div>
+	    			<div id="col4" class="col">4-Study</div>
+	    			<div id="col5" class="col">5-Medicines</div>
+	    			<div id="col6" class="col">6-Yoga</div>
+	    			<div id="col7" class="col">7-Books</div>
+	    			<div id="col8" class="col">8-Others</div>
+    			</div>	
+    		
+
+	    		<div class="form">
+		
+
+	    			<form id="form1" class="form1">
+	    				<h2>Donate Food</h2>
+               
+              <input type="text" class="inputs" name="food" placeholder="Enter which food you want to donate"><br>
+              Enter expiry date below<input type="date" class="inputs" name="fExpDate" placeholder="Enter Expiry of food">
+              <input type="text" class="inputs" name="fQuantity" placeholder="Enter quantity of food"><br>
+              
+	    				<div class="btn-box">
+	    					<input type="button" name="button" id="Next1" value="Next" onclick="n1()">
+	    				</div>
+	    			</form>
+
+	    			<form id="form2" class="form2">
+	    				<h2>Donate Clothes</h2>
+
+              <input type="text" class="inputs" name="in1" placeholder="Enter type of clothes eg. T-shirt, jeans">
+              <input type="text" class="inputs" name="in1" placeholder="Enter size of clothes">
+              <input type="text" class="inputs" name="in1" placeholder="Enter quantity of clothes"><br>
+             
+	    				<div class="btn-box">
+	    					<input type="button" name="button" id="Back2" value="Back" onclick="b2()">
+	    					<input type="button" name="button" id="Next2" value="Next" onclick="n2()">
+	    				</div>
+	    			</form>
+
+	    			<form id="form3" class="form3">
+	    				<h2>Sport Equipment</h2>
+
+              <input type="text" class="inputs" name="in1" placeholder="Enter type of clothes eg. Dumbles, ropes">
+              <input type="text" class="inputs" name="in1" placeholder="Enter whether it is gym product or not">
+              <input type="text" class="inputs" name="in1" placeholder="Enter quantity of equipments"><br>
+              
+	    				<div class="btn-box">
+	    					<input type="button" name="button" id="Back3" value="Back" onclick="b3()">
+	    					<input type="button" name="button" id="Next3" value="Next" onclick="n3()">
+	    				</div>
+	    			</form>
+
+	    			<form id="form4" class="form4">
+	    				<h2>Study Material</h2>
+
+              <input type="text" class="inputs" name="in1" placeholder="Enter type of study material eg. book, pen,pencil">
+              <input type="text" class="inputs" name="in1" placeholder="whether it is for school students or clg">
+              <input type="text" class="inputs" name="in1" placeholder="Enter quantity of material"><br>
+             
+	    				<div class="btn-box">
+	    					<input type="button" name="button" id="Back4" value="Back" onclick="b4()">
+	    					<input type="button" name="button" id="Next4" value="Next" onclick="n4()">
+	    				</div>
+	    			</form>
+
+	    			<form id="form5" class="form5">
+	    				<h2>Medicines</h2>
+
+              <input type="text" class="inputs" name="in1" placeholder="Enter type of Medicines">
+              <input type="text" class="inputs" name="in1" placeholder="Enter details eg.for which disease"><br>
+              Enter expiry date of medicines<input type="date" class="inputs" name="in1" placeholder="Enter Expiry date of medicines."><br>
+              
+	    				<div class="btn-box">
+	    					<input type="button" name="button" id="Back5" value="Back" onclick="b5()">
+	    					<input type="button" name="button" id="Next5" value="Next" onclick="n5()">
+	    				</div>
+	    			</form>
+
+	    			<form id="form6" class="form6">
+	    				<h2>Yoga Equipments</h2>
+
+              <input type="text" class="inputs" name="in1" placeholder="Enter type of equipments">
+              <input type="text" class="inputs" name="in1" placeholder="Enter name of equipments">
+              <input type="text" class="inputs" name="in1" placeholder="Enter quantity of equipments"><br>
+              
+	    				<div class="btn-box">
+	    					<input type="button" name="button" id="Back6" value="Back" onclick="b6()">
+	    					<input type="button" name="button" id="Next6" value="Next" onclick="n6()">
+	    				</div>
+	    			</form>
+
+	    			<form id="form7" class="form7">
+	    				<h2>Books</h2>
+
+              <input type="text" class="inputs" name="in1" placeholder="Enter name of Books">
+              <input type="text" class="inputs" name="in1" placeholder="Is that for children and old's">
+              <input type="text" class="inputs" name="in1" placeholder="Enter quantity"><br>
+             
+	    				<div class="btn-box">
+	    					<input type="button" name="button" id="Back7" value="Back" onclick="b7()">
+	    					<input type="button" name="button" id="Next7" value="Next" onclick="n7()">
+	    				</div>
+	    			</form>
+
+	    			<form id="form8" class="form8">
+	    				<h2>Others</h2>
+
+              <input type="text" class="inputs" name="in1" placeholder="Enter what you want to donate">
+              <input type="text" class="inputs" name="in1" placeholder="Enter name of that thing">
+              <input type="text" class="inputs" name="in1" placeholder="Enter quantity"><br>
+             
+	    				<div class="btn-box">
+	    					<input type="button" name="button" id="Back8" value="Back" onclick="b8()">
+	    					<input type="submit" name="button" id="Next8" value="Submit" onclick="submit()">
+	    				</div>
+	    			</form>
+
+	    		</div>
+	    	</div>
+    </div>
+
+			<footer class="footer" style="text-align: center;">
+			  <div class="copyright">
+			  	  <h3> All rights reserved. © Niket Sonawane © Tejas Borse </h3>
+			  </div>
+			</footer>
+
+</body>	
+
+<script>
+	var preloader = document.getElementById('loading');
+	function myFunction() 
+	{
+	preloader.style.display = 'none';
+	}
+</script>
+ 
+ 	<script src="form.js"></script>   
+</html>
+
+ 

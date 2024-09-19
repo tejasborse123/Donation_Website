@@ -1,0 +1,193 @@
+<head>
+  <meta charset="utf-8">
+  <title>Save Life</title>
+  <link rel="stylesheet" type="text/css" href="profile.css">
+  <link rel="stylesheet" type="text/css" href="common.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+  <body onload="myFunction()">
+
+    <div id="loading">
+       <div class="loader">
+                <div class="loader loader-inner">   
+                </div>
+        </div>
+    </div>
+
+<!--/////////////////////////////////////////////////////////////////////////////Navbar///////////////////////////////////////////////////////////////////////////////-->
+<div id="mcontainer">
+    <!---Navigation Bar -->
+
+  <div class="togglearea">
+              <label for="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+  </div>
+
+  <input type="checkbox" id="toggle" title="toggle">
+  
+  <div class="navbar">
+        
+             <div class="logo"><label id="lg">Save Life</label></div>
+              <ul>
+                 <li><a href="index.html"> Home</a></li>
+                 <li><a href="contact.html"> Contact</a></li>
+                 <li><a href="about.html"> About</a></li> 
+                 <li><a class="Active" href="#"><img src="images/profile-line.png" alt="account" width="25" height="23"></a></li>
+              </ul>
+
+  </div>
+
+</div> 
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!--//////////////////////////////////////////////////////////////////////Footer//////////////////////////////////////////////////////////////////////////////////////-->
+
+<div class="parents">
+  <div class="Child">
+      <div class="area">
+              <button disabled><h3><b>!!.SAVE LIFE.!!</b></h3></button>
+              <div class="profile">
+                      <div class="Circle">
+                          <img src="images/bitmoji.png" height="150px" width="150px">
+                      </div>
+
+                      <div class="username">
+                        
+                      </div>
+              </div>
+      </div>
+
+  </div>
+  
+  <!--//////////////////////////////////////////////////////////////////////Footer//////////////////////////////////////////////////////////////////////////////////////-->
+  <div class="Child">
+     <div class="container">
+
+        <button id="showBtn" onclick="showHide('dropdown')"> PROFILE&nbsp;&nbsp;&nbsp;</button>
+           <div class="drop-down" id="dropdown">
+             <ul>
+                 <li>Setting</li>
+                 <li><a href="about.html" style="text-decoration: none; color: black">About</a></li>
+                 <li><a href="index.html" style="text-decoration: none; color: black">Chat-Bot</a></li>
+                 <li><a href="Logout.php" style="text-decoration: none; color: black">Logout</a></li>
+             </ul>
+           </div>   
+      </div>
+      <div class="Ratings" id="ratings">
+          <b><h4 style="color: black;" >!!--Rate Us--!!</h4></b>
+          <div class="star-icon">
+          <form action="profile.php" method="POST">
+
+               <input type="radio" name="rating1" id="rating1" value="1">
+                  <label for="rating1" class="fa fa-star" id="s1"></label>
+
+               <input type="radio" name="rating1" id="rating2" value="2">
+                  <label for="rating2" class="fa fa-star" id="s2"></label>
+
+               <input type="radio" name="rating1" id="rating3" value="3">
+                  <label for="rating3" class="fa fa-star" id="s3"></label>
+
+               <input type="radio" name="rating1" id="rating4" value="4">
+                  <label for="rating4" class="fa fa-star" id="s4"></label>
+
+              <input type="radio" name="rating1" id="rating5" value="5">
+                  <label for="rating5" class="fa fa-star" id="s5"></label><br>
+
+              <button type="submit" id="submit" style="border-style: none;">Submit</button>
+
+              <input type="text" id="star-count" name="star-count" placeholder="Hello">
+          </form>
+          </div>
+     </div>
+  </div>
+</div>
+
+
+<!--/////////////////////////////////////////////////Footer////////////////////////////////////////-->
+
+
+<footer class="Footer">
+  <a href="https://www.freecounterstat.com" style="pointer-events: none; cursor: default;" title="web counter"><img src="https://counter9.stat.ovh/private/freecounterstat.php?c=uptn4hu824ewyzlb1q8pnsn8zzc1byue" border="0" title="web counter" alt="web counter"></a>
+    <div class="copyright">
+      <h3> All rights reserved. © Niket Sonawane © Tejas Borse </h3>
+    </div>
+</footer>
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<script>
+
+function showHide(id) {
+    var el = document.getElementById(id);
+    if( el && el.style.display == 'block')    
+        el.style.display = 'none';
+    else 
+        el.style.display = 'block';
+}
+
+let star = document.querySelectorAll('input');
+var setStarCount =  document.getElementById('star-count');
+
+for (let i=1;i<=5 ; i++) {
+  star[i].addEventListener('click',function(){
+    i = this.value;
+
+    let s1 = document.getElementById('s1');
+    let s2 = document.getElementById('s2');
+    let s3 = document.getElementById('s3');
+    let s4 = document.getElementById('s4');
+    let s5 = document.getElementById('s5');
+
+    s1.style.color = 'black';
+    s2.style.color = 'black';
+    s3.style.color = 'black';
+    s4.style.color = 'black';
+    s5.style.color = 'black';
+
+    if(i==1){
+      s1.style.color = 'gold';
+    }
+    if (i==2){
+      s1.style.color = 'gold';
+      s2.style.color = 'gold';
+    }
+    if(i==3){
+      s1.style.color = 'gold';
+      s2.style.color = 'gold';
+      s3.style.color = 'gold';
+    }
+    if(i==4){
+      s1.style.color = 'gold';
+      s2.style.color = 'gold';
+      s3.style.color = 'gold';
+      s4.style.color = 'gold';
+    }
+    if (i==5){
+      s1.style.color = 'gold';
+      s2.style.color = 'gold';
+      s3.style.color = 'gold';
+      s4.style.color = 'gold';
+      s5.style.color = 'gold';
+    }
+
+    setStarCount.value = i;
+})
+}
+
+</script>
+
+    <script>
+      var preloader = document.getElementById('loading');
+
+      function myFunction() {
+        preloader.style.display = 'none';
+      }
+
+    </script>
+    
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+</body>

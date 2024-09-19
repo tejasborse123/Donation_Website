@@ -1,0 +1,109 @@
+<head> 
+  <meta charset="utf-8">
+  <title>Save Life</title>
+  <link rel="stylesheet" type="text/css" href="contactcss.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" type="text/css" href="common.css">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body onload="myFunction()">
+
+    <div id="loading">
+       <div class="loader">
+                <div class="loader loader-inner">   
+                </div>
+        </div>
+    </div>
+
+    <!---Navigation Bar -->
+
+    <div class="togglearea">
+      <label for="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <input type="checkbox" id="toggle" title="toggle">
+      <div class="navbar">
+      	
+       <div class="logo"><label id="lg">Connect with us</label></div>
+        <ul>
+           <li><a href="index.html"> Home</a></li>
+           <li><a class="Active" href="#"> Contact</a></li>
+           <li><a href="about.html"> About</a></li> 
+           <li><a class="img1" href="profile.html"><img src="images/profile-line.png" alt="account" width="25" height="23" ></a></li>
+        </ul>
+      </div>
+
+      <!-- Actual Content of CONTACT US page-->
+        <div class="parents">
+              <div class="child">
+                    <br><h1 id="convo">Let's start Conversation</h1><br>
+                    <form action="contact.php" method="POST">
+                      <div class="input-row">
+                          <div class="input-group">
+                                  <label><h3>Name:</h3></label>
+                                  <input type="text" placeholder="Enter your Name here.." class="inputs" id="Name" name="name" required="required">
+                          </div>
+                          <div class="input-group">
+                                  <label><h3>Phone no:</h3></label>
+                                  <input type="text" placeholder="Enter your Phone no..." class="inputs" name="phone" required="required">
+                          </div>
+                      </div>
+                      <div class="input-row">
+                          <div class="input-group">
+                                  <label><h3>Email:</h3></label>
+                                  <input type="Email" placeholder="Enter your Email here.." class="inputs" id="Name" name="email" required="required">
+                          </div>
+                          <div class="input-group">
+                                  <label><h3>Password:</h3></label>
+                                  <input type="text" placeholder="Enter your Password..." class="inputs" name="password" required="required">
+                          </div>
+                      </div>
+
+                      <label><h3>Message:</h3></label>
+                      <textarea rows="5" cols="35" placeholder="Your Message here" name="message" required="required"></textarea><br>
+
+                      <button type="submit" id="submit" style="border-style: none;">Submit</button><br><br>
+                    </form><br><br><br><br>
+              </div>
+              <div class="child">
+                     <br><h1 id="convo">Reach us</h1><br>
+                     <h3 id="EmailHeading">Email : </h3><br><br>
+                        <h4 id="ActualEmails">
+                           <h4>Offical Mail :  </h4>
+                           <a id="Email" href="mailto:borsetejas764@gmail.com">savelifes07@gmail.com </a><br><br><br>
+                           <h4>Creators Mail : </h4>
+                           <a id="Email" href="mailto:borsetejas764@gmail.com">borsetejas764@gmail.com </a><br>
+                           <a id="Email" href="mailto:niketsonawane49@gmail.com">niketsonawane49@gmail.com</a><br>
+                           <a id="Email" href="mailto:niketsonawane49@gmail.com">gondepatilvarad@gmail.com</a><br>
+                           <a id="Email" href="mailto:@gmail.com">#####@gmail.com"</a><br><br><br>
+                      <div class="icons-wrapper">
+                        <i class="ri-instagram-line icon"></i>
+                        <i class="ri-facebook-circle-line icon"></i>
+                        <i class="ri-whatsapp-line icon"></i>
+                      </div>
+
+                      <br><br><br>
+              </div>
+        </div>
+
+    <script>
+      var preloader = document.getElementById('loading');
+
+      function myFunction() {
+        preloader.style.display = 'none';
+      }
+
+    </script>
+    
+</body>
+
+<footer class="Footer">
+    <a href="https://www.freecounterstat.com" style="pointer-events: none; cursor: default;" title="web counter"><img src="https://counter9.stat.ovh/private/freecounterstat.php?c=uptn4hu824ewyzlb1q8pnsn8zzc1byue" border="0" title="web counter" alt="web counter"></a>
+    <div class="copyright">
+      <h3> All rights reserved. © Niket Sonawane © Tejas Borse </h3>
+    </div>
+</footer>
